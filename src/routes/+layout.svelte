@@ -3,6 +3,9 @@ import "../app.postcss";
 import { Menu, MenuButton, MenuItems, MenuItem } from "@rgossiaux/svelte-headlessui";
 import { ChevronDownIcon } from "svelte-feather-icons";
 </script>
+<svelte:head>
+    <title>Pridecraft Studios</title>
+</svelte:head>
 <header class="h-16 p-4 bg-surface0 flex flex-row space-x-2 items-center pr-8 mr-20 rounded-br-full">
     <a href="/" class="text-xl font-semibold flex flex-row items-center gap-2">
         <img class="w-10 h-10 rounded-lg" src="/favicon.png" alt="Pridecraft Studios Icon">
