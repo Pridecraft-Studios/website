@@ -1,0 +1,36 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.token.keyword {
+    @apply text-mauve
+}
+
+.token.builtin {
+    @apply text-red
+}
+
+.token.class-name {
+    @apply text-yellow
+}
+
+.token.function {
+    @apply text-blue
+}
+
+.token.boolean, .token.number {
+    @apply text-peach
+}
+
+.token.string, .token.char, .token.regex {
+    @apply text-green
+}
+
+.token.operator {
+    @apply text-sky
+}
+
+.token.comment {
+    @apply text-overlay0
+}
