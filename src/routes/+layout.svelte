@@ -13,8 +13,8 @@ import { ChevronDownIcon } from "svelte-feather-icons";
     </a>
     <div class="grow" aria-hidden="true"></div>
     <nav class="flex flex-row gap-2">
-        <a href="/stuff" class="p-2 hover:bg-surface1 rounded-xl text-lg">Stuff</a>
-        <Menu>
+        <a href="/" class="p-2 hover:bg-surface1 rounded-xl text-lg">Home</a>
+        <!-- <Menu>
             <MenuButton class="p-2 hover:bg-surface1 rounded-xl text-lg">
                 Dropdown
                 <ChevronDownIcon class="inline" />
@@ -37,7 +37,7 @@ import { ChevronDownIcon } from "svelte-feather-icons";
                 </MenuItem>
             </MenuItems>
         </Menu>
-        <a href="/stuff" class="p-2 hover:bg-surface1 rounded-xl text-lg">Stuff</a>
+        <a href="/stuff" class="p-2 hover:bg-surface1 rounded-xl text-lg">Stuff</a> -->
     </nav>
 </header>
 <div class="prose dark:prose-invert m-4">
