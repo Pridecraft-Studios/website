@@ -9,3 +9,6 @@ In our modifications, we aim to not make the whole game rainbow. Not changing th
 For our Resource Packs, we change smaller things, such as beds and entities. In our mod, we may make a Gay Ore so some very rainbow world generation will at least make some sense.
 
 If you want to contribute, check out our [Github](https://github.com/Pridecraft-Studios/) repositories.
+
+# Socials
+[![Check out the Insta](https://github.com/Nu-Git/questionmark-badges/blob/main/pridepack-4.20/Check%20Out%20Instagram.png?raw=true)](https://www.instagram.com/pridecraftstudios/) [![Check out our YouTube](https://github.com/Nu-Git/questionmark-badges/blob/main/pridepack-4.20/Check%20Out%20Youtube.png?raw=true)](https://www.youtube.com/@PrideCraftStudios) [![Join the Discord](https://github.com/Nu-Git/questionmark-badges/blob/main/badges/1Xpng/Join%20the%20Discord@1x.png?raw=true)](https://discord.pridecraft.gay)
