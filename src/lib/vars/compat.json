@@ -1,0 +1,34 @@
+{
+  "iris": {
+    "name": "Iris Shaders",
+    "link": "https://irisshaders.net/",
+    "title": "Compatible with Iris"
+  },
+  "optifabric": {
+    "name": "OptiFabric",
+    "link": "https://www.curseforge.com/minecraft/mc-mods/optifabric"
+  },
+  "optifine": {
+    "name": "OptiFine",
+    "link": "https://optifine.net"
+  },
+  "pfm": {
+    "type": "Integrates",
+    "name": "Paladin's Furniture",
+    "link": "https://modrinth.com/mod/paladins-furniture",
+    "title": "Integrates with Paladin's Furniture Mod"
+  },
+  "sodium": {
+    "name": "Sodium",
+    "link": "https://modrinth.com/mod/sodium"
+  },
+  "vulkanmod": {
+    "name": "VulkanMod",
+    "link": "https://modrinth.com/mod/vulkanmod",
+    "title": "Compatible with VulkanMod (Probably)"
+  },
+  "canvas": {
+    "name": "Canvas Renderer",
+    "link": "https://modrinth.com/mod/canvas"
+  }
+}
