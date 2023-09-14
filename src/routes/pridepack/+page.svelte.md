@@ -50,6 +50,9 @@ our discord.
 ## Screenshot
 
 <Picture name="biis" alt="Bii bees everywhere" size="1920w" />
+<Picture name="bii-jungle" alt="Bii bees in a jungle" size="1920w" />
+<Picture name="trans-allium" alt="Trans-coloured alliums scattered around" size="1920w" />
+<Picture name="old-paintings" alt="Old paintings found in older versions of Pridepack" size="1920w" />
 
 ## Where else is this available?
 
