@@ -2,7 +2,11 @@
   import { error } from '@sveltejs/kit';
   import Badge from '$lib/components/Badge.svelte';
   export let badges: Badge[];
-  if(!(badges instanceof Array)) throw error(500, `Bad badges value: '${badges}' == '${typeof(badges)}'`);
+  if(!(badges instanceof Array)) {
+    const err = `Bad badges value: '${badges}' == '${typeof(badges)}'`;
+    console.trace(err)
+    throw error(500, err);
+  }
 
 
 </script>
