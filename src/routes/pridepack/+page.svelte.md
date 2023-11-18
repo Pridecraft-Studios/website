@@ -3,7 +3,6 @@ import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
 
 import social from '$lib/vars/social';
-import compat from '$lib/compat';
 </script>
 
 <!-- Cuties -->
@@ -79,6 +78,3 @@ our discord.
 {/each}
 </div>
 
-## Mod compatibility
-
-<Badges badges="{compat}"/>
