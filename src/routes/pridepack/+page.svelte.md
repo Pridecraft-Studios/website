@@ -32,8 +32,7 @@ the [GitHub Releases](https://git.pridecraft.gay/PridePack)
 ## How can I contribute?
 
 You can help us translate Pridepack to more laguages
-on [Crowdin](https://crowdin.com/project/pridepack/settings) <a href="https://crowdin.com/project/pridepack" title="Crowdin"><img src="https://badges.crowdin.net/pridepack/localized.svg" alt="Crowdin"/></a>
-.
+on [Crowdin](https://crowdin.com/project/pridepack/settings) <a href="https://crowdin.com/project/pridepack" title="Crowdin"><img src="https://badges.crowdin.net/pridepack/localized.svg" alt="Crowdin"/></a>.
 You can also indirectly contribute by voting on polls on [the Discord](https://discord.pridecraft.gay),
 or [our Mastodon](https://tech.lgbt/@pridecraft)
 
