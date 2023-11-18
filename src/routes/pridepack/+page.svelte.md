@@ -1,4 +1,5 @@
 <script lang="ts">
+import Badge from '$lib/components/BadgeRaw.svelte';
 import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
 
@@ -59,9 +60,9 @@ our discord.
 <a href="https://modrinth.com/resourcepack/pridepack" title="Available on Modrinth"><img src="https://raw.githubusercontent.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/available/modrinth_vector.svg" alt="Available on Modrinth"/></a>
 <a href="https://www.curseforge.com/minecraft/texture-packs/pride-pack" title="Available on CurseForge"><img src="https://raw.githubusercontent.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/available/curseforge_vector.svg" alt="Available on CurseForge"/></a>
 <a href="https://github.com/Pridecraft-Studios/pridepack" title="Available on GitHub"><img src="https://raw.githubusercontent.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/available/github_vector.svg" alt="Available on GitHub"/></a>
-<a href="https://tlmods.org/en/resourcepacks/pride-pack/" title="Stolen by TLMods"><img src="https://raw.githubusercontent.com/blryface/blurrybadges/88c6971e38f189d9dc9393c8a4933974559c3c1d/badges/svg/Stolen%20By%20TLMods.svg" alt="Stolen by TLMods"/></a>
+<a href="https://tlmods.org/en/resourcepacks/pride-pack/" title="Stolen by TLMods, not that you should download from here."><img src="https://raw.githubusercontent.com/blryface/blurrybadges/88c6971e38f189d9dc9393c8a4933974559c3c1d/badges/svg/Stolen%20By%20TLMods.svg" alt="Stolen by TLMods"/></a>
 <a href="https://www.planetminecraft.com/member/canalnu/" title="Available on PlanetMinecraft"><img src="https://github.com/blryface/blurrybadges/blob/main/badges/1Xpng/Avaliable%20On%20PMC@1x.png?raw=true" alt="Available on PlanetMinecraft"/></a>
-<a href="https://curserinth.kuylar.dev/resourcepack/respack__pride-pack" title="Available on CurseRinth"><img src="https://raw.githubusercontent.com/Nu-Git/blurrybadges/88c6971e38f189d9dc9393c8a4933974559c3c1d/badges/64h/Avaliable%20on%20Curserinth.png?raw=true" alt="Available on CurseRinth" height="56"/></a>
+<Badge id="nineminecraft" rel="me" link="https://www.9minecraft.net/pride-resource-pack/" name="9Minecraft" head="Stolen by" title="Stolen by 9Minecraft, not that you should download from here."/>
 </div>
 
 ## Socials
