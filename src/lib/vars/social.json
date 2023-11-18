@@ -17,12 +17,6 @@
     "link": "https://discord.pridecraft.gay/",
     "icon": "https://github.com/intergrav/devins-badges/raw/v3/assets/cozy/social/discord-plural_vector.svg"
   },
-  "modrinth": {
-    "name": "Modrinth",
-    "alt": "Check out our projects",
-    "link": "https://modrinth.com/user/Pridecraft",
-    "icon": "https://github.com/intergrav/devins-badges/raw/v3/assets/cozy/available/modrinth_vector.svg"
-  },
   "tech.lgbt": {
     "name": "Mastodon",
     "alt": "Chat with us on Mastodon",
