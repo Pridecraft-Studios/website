@@ -7,7 +7,15 @@
   export let head: string;
   export let name: string;
 
+  // Set `alt` automatically when applicable.
+  if (!alt) {
+    alt = name + "'s logo";
+  }
 
+  // Set `title` automatically when applicable.
+  if (!title) {
+    title = head + ' ' + name;
+  }
 </script>
 
 <a rel="{rel}" href="{link}" title="{title}" id="{id}" class="badge">
