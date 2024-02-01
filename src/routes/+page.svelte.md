@@ -5,7 +5,8 @@ import devs from '$lib/vars/devs';
 
 # Pridecraft Studios
 
-We’re a team creating LGBT stuff for Minecraft. We make everything from Resource Packs to Mods, without overgaying the
+We're a collective of developers making LGBT-themed modifications to Minecraft.
+We make everything from Resource Packs to Mods, without overgaying the
 game and making it look like somebody just vomited rainbows all over the place.
 
 The only things we feel more free to “overqueer” (not that there is such a thing, too much gayness) is our mod, because,
@@ -15,9 +16,10 @@ In our modifications, we aim to not make the whole game rainbow. Not changing th
 something we do to make the game not look like flat rainbows.
 
 For our Resource Packs, we change smaller things, such as beds and entities. In our mod, we may make a Gay Ore so some
-very rainbow world generation will at least make some sense.
+very rainbow biome generation will at least make some sense.
 
-If you want to contribute, check out our [Github](https://github.com/Pridecraft-Studios/) repositories.
+If you want to contribute, check out our [Github](https://git.pridecraft.gay/) repositories, or
+our [Crowdin](https://translate.pridecraft.gay)
 
 ## Socials
 
