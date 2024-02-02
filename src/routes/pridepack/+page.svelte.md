@@ -48,7 +48,7 @@ We plan adding support for the [Create Mod](https://modrinth.com/mod/create)
 have an idea, send it [In this channel](https://canary.discord.com/channels/1091969030694375444/1105937605838770227) on
 our discord.
 
-## Screenshot
+## Screenshots
 
 <Picture name="biis" alt="Bii bees everywhere" size="1920w" />
 <Picture name="biis-pollinating-allium" alt="A few biis pollinating a flower with glow berries on the background" size="1920w" />
