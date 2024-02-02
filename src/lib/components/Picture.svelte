@@ -7,13 +7,15 @@
 
 </script>
 
-<picture>
-  {#if jxlFirst}
-  <source srcset="/assets/img/{name}-lossy.jxl {size}" type="image/jxl"/>
-  <source srcset="/assets/img/{name}-lossy.avif {size}" type="image/avif"/>
-  {:else}
-  <source srcset="/assets/img/{name}-lossy.avif {size}" type="image/avif"/>
-  <source srcset="/assets/img/{name}-lossy.jxl {size}" type="image/jxl"/>
-  {/if}
-  <img src="/assets/img/{name}-lossy.webp" alt="{alt}" loading="lazy"/>
-</picture>
+<a href="/assets/img/{name}.webp" title="{alt}">
+  <picture>
+    {#if jxlFirst}
+    <source srcset="/assets/img/{name}-lossy.jxl {size}" type="image/jxl"/>
+    <source srcset="/assets/img/{name}-lossy.avif {size}" type="image/avif"/>
+    {:else}
+    <source srcset="/assets/img/{name}-lossy.avif {size}" type="image/avif"/>
+    <source srcset="/assets/img/{name}-lossy.jxl {size}" type="image/jxl"/>
+    {/if}
+    <img src="/assets/img/{name}-lossy.webp" alt="{alt}" loading="lazy"/>
+  </picture>
+</a>

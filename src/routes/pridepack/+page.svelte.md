@@ -51,9 +51,11 @@ our discord.
 ## Screenshot
 
 <Picture name="biis" alt="Bii bees everywhere" size="1920w" />
+<Picture name="biis-pollinating-allium" alt="A few biis pollinating a flower with glow berries on the background" size="1920w" />
+<Picture name="biis-pollinating-azalea" alt="A group of biis, many of the baby variant, pollinating an Azalea Bush" size="1920w" />
 <Picture name="bii-jungle" alt="Bii bees in a jungle" size="1920w" />
 <Picture name="trans-allium" alt="Trans-coloured alliums scattered around" size="1920w" />
-<Picture name="old-paintings" alt="Old paintings found in older versions of Pridepack" size="1920w" />
+<Picture name="pride-flag-paintings" alt="Six pride flag themed paitings on the walls of a Lush Cave" size="1920w" />
 
 ## Where else is this available?
 
