@@ -38,16 +38,6 @@ on [Crowdin](https://crowdin.com/project/pridepack/settings) <a href="https://cr
 You can also indirectly contribute by voting on polls on [the Discord](https://discord.pridecraft.gay),
 or [our Mastodon](https://tech.lgbt/@pridecraft)
 
-## What mods are currently supported?
-
-Currently, the only themed mod is [Paladin's Furniture Mod](https://modrinth.com/mod/paladins-furniture), which is
-avaliable on the base Pridepack resource pack.
-We plan adding support for the [Create Mod](https://modrinth.com/mod/create)
-, [More Axolotl Variants Mod](https://modrinth.com/mod/mavm) (*could be added to Pridemod instead*)
-, [Botania](https://modrinth.com/mod/botania) (gay tater :thonk:) and many other mods we get suggestions for. If you
-have an idea, send it [In this channel](https://canary.discord.com/channels/1091969030694375444/1105937605838770227) on
-our discord.
-
 ## Screenshots
 
 <Picture name="biis-pollinating-allium" alt="A few biis pollinating a flower with glow berries on the background" size="1920w" />
@@ -59,7 +49,6 @@ our discord.
 ## Where else is this available?
 
 <div class="badges">
-
 <a href="https://modrinth.com/resourcepack/pridepack" title="Available on Modrinth"><img src="https://raw.githubusercontent.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/available/modrinth_vector.svg" alt="Available on Modrinth"/></a>
 
 <a href="https://www.curseforge.com/minecraft/texture-packs/pride-pack" title="Available on CurseForge"><img src="https://raw.githubusercontent.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/available/curseforge_vector.svg" alt="Available on CurseForge"/></a>
