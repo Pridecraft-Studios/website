@@ -31,6 +31,7 @@ import { ChevronDownIcon } from "svelte-feather-icons";
     <nav class="flex flex-row gap-2">
         <a href="/" class="p-2 hover:bg-surface1 rounded-xl text-lg">Home</a>
         <a href="/pridepack" class="p-2 hover:bg-surface1 rounded-xl text-lg">Pridepack</a>
+        <a href="/pridegui" class="p-2 hover:bg-surface1 rounded-xl text-lg">PrideGUI</a>
         <!-- <Menu>
             <MenuButton class="p-2 hover:bg-surface1 rounded-xl text-lg">
                 Dropdown
