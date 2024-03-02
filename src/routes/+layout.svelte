@@ -32,6 +32,9 @@ import { ChevronDownIcon } from "svelte-feather-icons";
        <!-- <a href="/" class="p-2 hover:bg-surface1 rounded-xl text-lg">Home</a>
         <a href="/pridepack" class="p-2 hover:bg-surface1 rounded-xl text-lg">Pridepack</a>
         <a href="/pridegui" class="p-2 hover:bg-surface1 rounded-xl text-lg">PrideGUI</a> -->
+
+        
+        <a href="/" class="p-2 hover:bg-surface1 rounded-xl text-lg">Home</a>
         <Menu>
             <MenuButton class="p-2 hover:bg-surface1 rounded-xl text-lg">
                 Projects
@@ -55,7 +58,7 @@ import { ChevronDownIcon } from "svelte-feather-icons";
                 </MenuItem> --->
             </MenuItems>
         </Menu>
-        <a href="/" class="p-2 hover:bg-surface1 rounded-xl text-lg">Home</a>
+
     </nav>
 </header>
 <div class="prose dark:prose-invert m-4">
