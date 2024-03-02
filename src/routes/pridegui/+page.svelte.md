@@ -17,6 +17,7 @@ It comes in a single, Dark version.
 
 It's first release is 18.0.0, due to the Pridepack Versioning System.
 
+![PrideGUI banner](https://cdn.modrinth.com/data/6mcKx2Pb/images/05250c177741152dca8e964ea47a3806d23d4432.png)
 ## Who?
 
 We are [Pridecraft Studios](https://pridecraft.gay), A team that makes LGBT content for Minecraft. We're working on [PridePack](https://git.pridecraft.gay/PridePack), [PrideMod](https://git.pridecraft.gay/PrideMod), and a few other [projects](https://git.pridecraft.gay/repositories).
