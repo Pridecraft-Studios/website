@@ -51,11 +51,26 @@ import { ChevronDownIcon } from "svelte-feather-icons";
                         PrideGUI
                     </a>
                 </MenuItem>
-              <!---  <MenuItem class="contents">
-                    <a href="/stuff" class="hover:bg-surface2 text-lg rounded-b-lg p-2">
+<!--            <MenuItem class="contents">
+                    <a href="/pridemod" class="hover:bg-surface2 text-lg rounded-b-lg p-2">
                         PrideMod
                     </a>
-                </MenuItem> --->
+                </MenuItem>
+                <MenuItem class="contents">
+                    <a href="/mspride" class="hover:bg-surface2 text-lg rounded-b-lg p-2">
+                        MSPRIDE
+                    </a>
+                </MenuItem>
+                <MenuItem class="contents">
+                    <a href="/pridebones" class="hover:bg-surface2 text-lg rounded-b-lg p-2">
+                        Pride Bones
+                    </a>
+                </MenuItem>
+                <MenuItem class="contents">
+                    <a href="/faithfulpride" class="hover:bg-surface2 text-lg rounded-b-lg p-2">
+                        Faithful Pride
+                    </a>
+                </MenuItem> -->
             </MenuItems>
         </Menu>
 
