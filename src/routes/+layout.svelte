@@ -29,33 +29,33 @@ import { ChevronDownIcon } from "svelte-feather-icons";
     </a>
     <div class="grow" aria-hidden="true"></div>
     <nav class="flex flex-row gap-2">
-        <a href="/" class="p-2 hover:bg-surface1 rounded-xl text-lg">Home</a>
+       <!-- <a href="/" class="p-2 hover:bg-surface1 rounded-xl text-lg">Home</a>
         <a href="/pridepack" class="p-2 hover:bg-surface1 rounded-xl text-lg">Pridepack</a>
-        <a href="/pridegui" class="p-2 hover:bg-surface1 rounded-xl text-lg">PrideGUI</a>
-        <!-- <Menu>
+        <a href="/pridegui" class="p-2 hover:bg-surface1 rounded-xl text-lg">PrideGUI</a> -->
+        <Menu>
             <MenuButton class="p-2 hover:bg-surface1 rounded-xl text-lg">
-                Dropdown
+                Projects
                 <ChevronDownIcon class="inline" />
             </MenuButton>
             <MenuItems class="absolute flex flex-col bg-surface1 mt-2 w-32 origin-top-left rounded-lg shadow-lg focus:outline-none">
                 <MenuItem class="contents">
-                    <a href="/stuff" class="hover:bg-surface2 text-lg rounded-t-lg p-2">
-                        Stuff
+                    <a href="/pridepack" class="hover:bg-surface2 text-lg rounded-t-lg p-2">
+                        Pridepack
                     </a>
                 </MenuItem>
                 <MenuItem class="contents">
-                    <a href="/stuff" class="hover:bg-surface2 text-lg p-2">
-                        Stuff
+                    <a href="/pridegui" class="hover:bg-surface2 text-lg p-2">
+                        PrideGUI
                     </a>
                 </MenuItem>
-                <MenuItem class="contents">
+              <!---  <MenuItem class="contents">
                     <a href="/stuff" class="hover:bg-surface2 text-lg rounded-b-lg p-2">
-                        Stuff
+                        PrideMod
                     </a>
-                </MenuItem>
+                </MenuItem> --->
             </MenuItems>
         </Menu>
-        <a href="/stuff" class="p-2 hover:bg-surface1 rounded-xl text-lg">Stuff</a> -->
+        <a href="/" class="p-2 hover:bg-surface1 rounded-xl text-lg">Home</a>
     </nav>
 </header>
 <div class="prose dark:prose-invert m-4">
