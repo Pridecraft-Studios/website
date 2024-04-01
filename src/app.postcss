@@ -3,6 +3,99 @@
 @tailwind components;
 @tailwind utilities;
 
+.MC_globalFooterA_locale {
+	background-color: #313131;
+	width: 100%;
+	color: white;
+}
+
+.MC_globalFooterA_ms-branding {
+	max-width: 1140px;
+    margin: 0 auto;
+    padding: 32px 0 27px 0;
+    display: flex;
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: 575.98px)
+.MC_globalFooterA_ms-branding_locale {
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 767.98px)
+.MC_globalFooterA_ms-branding_locale {
+    padding: 0 30px;
+    width: calc(100% - 40px);
+}
+.MC_globalFooterA_ms-branding_locale {
+    display: flex;
+    width: 100%;
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: 575.98px)
+.MC_globalFooterA_ms-branding-nav {
+    padding: 15px 15px 0;
+}
+
+@media only screen and (max-width: 767.98px)
+.MC_globalFooterA_ms-branding-nav {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 15px 30px 0;
+}
+@media only screen and (max-width: 991.98px)
+.MC_globalFooterA_ms-branding-nav {
+    padding-top: 15px;
+}
+@media only screen and (max-width: 991.98px)
+.MC_globalFooterA_ms-branding-nav {
+    flex: 0 0 83%;
+    max-width: 83%;
+    justify-content: left;
+}
+.MC_globalFooterA_ms-branding-nav {
+    justify-content: center;
+    display: flex;
+    flex: 0 0 64%;
+    max-width: 64%;
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: 991.98px)
+.MC_globalFooterA_ms-branding-container {
+    display: none;
+}
+
+@media only screen and (max-width: 991.98px)
+.MC_globalFooterA_ms-branding-container {
+    padding-left: 0;
+}
+.MC_globalFooterA_ms-branding-container {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+    padding-right: 15px;
+    padding-left: 15px;
+	box-sizing: border-box;
+}
+
+.MC_globalFooterA_ms-branding-nav ul li:first-child {
+    padding-left: 0;
+}
+.MC_globalFooterA_ms-branding-nav ul li {
+    display: inline-flex;
+    padding: 0 15px 5px 0;
+}
+
+.MC_globalFooterA_ms-branding-nav a {
+    text-decoration: none;
+    color: #f8f5f4;
+}
+
+.MC_globalFooterA_ms-branding-copyright, .MC_globalFooterA_ms-branding-nav a {
+    font-size: .725rem;
+}
+
 .token.keyword {
     @apply text-mauve
 }

@@ -22,7 +22,7 @@ import { ChevronDownIcon } from "svelte-feather-icons";
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:400,800" rel="stylesheet"/>
 </svelte:head>
-<header class="h-16 p-4 bg-surface0 flex flex-row space-x-2 items-center pr-8 mr-20 rounded-br-full">
+<header class="h-16 p-4 bg-white flex flex-row space-x-2 items-center w-full border-b-black border-b-2">
     <a href="/" class="text-xl font-semibold flex flex-row items-center gap-2">
         <img class="w-10 h-10 rounded-lg" src="/favicon.png" alt="Straigtcraft Studios Icon">
         Straightcraft Studios
@@ -34,13 +34,13 @@ import { ChevronDownIcon } from "svelte-feather-icons";
         <a href="/pridegui" class="p-2 hover:bg-surface1 rounded-xl text-lg">PrideGUI</a> -->
 
         
-        <a href="/" class="p-2 hover:bg-surface1 rounded-xl text-lg">Home</a>
+        <a href="/" class="p-2 hover:bg-slate-100 rounded-xl text-lg">Home</a>
         <Menu>
-            <MenuButton class="p-2 hover:bg-surface1 rounded-xl text-lg">
+            <MenuButton class="p-2 hover:bg-slate-100 rounded-xl text-lg">
                 Projects
                 <ChevronDownIcon class="inline" />
             </MenuButton>
-            <MenuItems class="absolute flex flex-col bg-surface1 mt-2 w-32 origin-top-left rounded-lg shadow-lg focus:outline-none">
+            <MenuItems class="absolute flex flex-col bg-slate-100 mt-5 right-2 w-32 origin-top-left rounded-lg shadow-lg focus:outline-none">
                 <MenuItem class="contents">
                     <a href="/pridepack" class="hover:bg-surface2 text-lg rounded-t-lg p-2">
                         StraightPack
@@ -76,6 +76,68 @@ import { ChevronDownIcon } from "svelte-feather-icons";
 
     </nav>
 </header>
-<div class="prose dark:prose-invert m-4">
+<div class="prose dark:prose-invert m-4 max-w-[60rem] w-[60rem] p-4">
     <slot />
 </div>
+<section class="MC_globalFooterA_locale" data-aem-item="globalfooter_locale">
+    <div class="MC_globalFooterA_ms-branding">
+        <div class="MC_globalFooterA_ms-branding-container">
+            <a class="flex flex-row flex-wrap items-center gap-2 font-medium" href="/" aria-label="Microsoft" data-aem-contentname="logo-action">
+                <img class="MC_globalFooterA_ms-branding-logo h-8" src="http://localhost:5173/favicon.png" alt="Microsoft logo"> <span> Straightcraft </span>
+            </a>
+        </div>
+        <div class="MC_globalFooterA_ms-branding-nav">
+            <ul>
+                
+                    <li>
+                        <a href="https://go.microsoft.com/fwlink/?linkid=521839" aria-label="Privacy and Cookies" data-aem-contentname="brandnav-action" target="_blank">
+                            
+                            Privacy and Cookies
+                        </a>
+                    </li>
+                    
+                
+                    
+                    
+                
+                    <li>
+                        <a href="https://minecraft.net/eula" aria-label="Terms of use" data-aem-contentname="brandnav-action" target="_blank">
+                            
+                            Terms of use
+                        </a>
+                    </li>
+                    
+                
+                    <li>
+                        <a href="https://www.microsoft.com/trademarks" aria-label="Trademarks" data-aem-contentname="brandnav-action" target="_blank">
+                            
+                            Trademarks
+                        </a>
+                    </li>
+                    
+                
+                    <li>
+                        <a href="https://choice.microsoft.com/" aria-label="About our ads" data-aem-contentname="brandnav-action" target="_blank">
+                            
+                            About our ads
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        <span class="MC_globalFooterA_ms-branding-copyright">© 2024 Straightcraft Studios</span>
+                    </li>
+                
+                    
+                    
+                
+            </ul>
+        </div>
+        <div class="MC_globalFooterA_ms-branding-container">
+            <a href="https://www.microsoft.com" aria-label="Microsoft" data-aem-contentname="logo-action">
+                <img class="MC_globalFooterA_ms-branding-logo" src="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/logos/Logo_%20Microsoft.svg" alt="Microsoft logo">
+            </a>
+        </div>
+    </div>
+</section>
