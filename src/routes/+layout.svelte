@@ -83,7 +83,7 @@ import { ChevronDownIcon } from "svelte-feather-icons";
     <div class="MC_globalFooterA_ms-branding">
         <div class="MC_globalFooterA_ms-branding-container">
             <a class="flex flex-row flex-wrap items-center gap-2 font-medium" href="/" aria-label="Microsoft" data-aem-contentname="logo-action">
-                <img class="MC_globalFooterA_ms-branding-logo h-8" src="http://localhost:5173/favicon.png" alt="Microsoft logo"> <span> Straightcraft </span>
+                <img class="MC_globalFooterA_ms-branding-logo h-8" src="/favicon.png" alt="Microsoft logo"> <span> Straightcraft </span>
             </a>
         </div>
         <div class="MC_globalFooterA_ms-branding-nav">
