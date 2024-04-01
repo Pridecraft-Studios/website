@@ -3,20 +3,14 @@ import social from '$lib/vars/social';
 import devs from '$lib/vars/devs';
 </script>
 
-# Pridecraft Studios
+# Straightcraft Studios
 
-We're a collective of developers making LGBT-themed modifications to Minecraft.
-We make everything from Resource Packs to Mods, without overgaying the
-game and making it look like somebody just vomited rainbows all over the place.
+We're a subsidiary of [Microsoft](https://microsoft.com) making [Straight Pride](https://straight.pride) modifications to Minecraft.
+We make your game look as heterosexual as possible, removing any signs of rainbows that are vomited over the game.
 
-The only things we feel more free to “overqueer” (not that there is such a thing, too much gayness) is our mod, because,
-well, it’s *our* mod.
+If you find something gay in the game please report it immediately to [Minecraft's Bug Tracker](https://worldwidepixel.ca/discord) so we can work to remove it ASAP.
 
-In our modifications, we aim to not make the whole game rainbow. Not changing the terrain blocks, for example, is
-something we do to make the game not look like flat rainbows.
-
-For our Resource Packs, we change smaller things, such as beds and entities. In our mod, we may make a Gay Ore so some
-very rainbow biome generation will at least make some sense.
+In all of our projects we aim to make the game the least gay possible, and only with Male and Female genders and pronouns. None of that "gender neutral" bullcrap.
 
 If you want to contribute, check out our [Github](https://git.pridecraft.gay/) repositories, or
 our [Crowdin](https://translate.pridecraft.gay)
@@ -40,3 +34,5 @@ our [Crowdin](https://translate.pridecraft.gay)
 {#each Object.entries(devs) as [key, value]}
 <a rel="me" href="{value.link}">{key}</a><br/>
 {/each}
+
+ᶠᵒʳ ˡᵉᵍᵃˡ ʳᵉᵃˢᵒⁿˢ, ᵗʰᵉ "ᴹᶦᶜʳᵒˢᵒᶠᵗ ˢᵘᵇˢᶦᵈᶦᵃʳʸ" ᵖᵃʳᵗ ᶦˢ ᵃ ʲᵒᵏᵉ.

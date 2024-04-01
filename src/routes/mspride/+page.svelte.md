@@ -22,11 +22,11 @@ import social from '$lib/vars/social';
 
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/invalid?logo=modrinth&label=Modrinth%20downloads&color=%231bd96a&style=for-the-badge) ![CurseForge Downloads](https://img.shields.io/curseforge/dt/invalid?logo=curseforge&label=CurseForge%20Downloads&color=%23f16436&style=for-the-badge) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/pridecraft-studios/mspride/total?style=for-the-badge&logo=github&label=Github%20Downloads) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/pridecraft-studios/mspride?style=for-the-badge&logo=github)
 
-This is MSPRIDE. A LGBT Pride themed Resource Pack made by [Pridecraft Studios](https://git.pridecraft.gay/), with the style and looks and looks of [Faithful](https://faithfulpack.net/). We make Minecraft queer.
+This is MSPRIDE. A LGBT Pride themed Resource Pack made by [Straightcraft Studios](https://git.pridecraft.gay/), with the style and looks and looks of [Faithful](https://faithfulpack.net/). We make Minecraft queer.
 
 ## Who
 
-We're [Pridecraft Studios](https://pridecraft.gay): A team that makes LGBT content for Minecraft. We're working on [PridePack](https://git.pridecraft.gay/PridePack), [PrideMod](https://git.pridecraft.gay/PrideMod), and a few other [projects](https://github.com/orgs/Pridecraft-Studios/repositories).
+We're [Straightcraft Studios](https://pridecraft.gay): A team that makes LGBT content for Minecraft. We're working on [PridePack](https://git.pridecraft.gay/PridePack), [PrideMod](https://git.pridecraft.gay/PrideMod), and a few other [projects](https://github.com/orgs/Pridecraft-Studios/repositories).
 
 [![ko-fi](https://rawcdn.githack.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/donate/kofi-plural_vector.svg)](https://ko-fi.com/W7W4NLJWR)
 

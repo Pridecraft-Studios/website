@@ -7,15 +7,15 @@ import { ChevronDownIcon } from "svelte-feather-icons";
 
 </script>
 <svelte:head>
-    <title>Pridecraft Studios</title>
+    <title>Straightcraft Studios</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="theme-color" content="#FF0000"/>
-    <meta name="description" content="Minecraft Gay Real"/>
+    <meta name="description" content="Minecraft Straight Real"/>
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="en_US"/>
-    <meta property="og:title" content="Pridecraft Studios"/>
-    <meta property="og:description" content="Minecraft Gay Real"/>
-    <meta property="og:site_name" content="Pridecraft"/>
+    <meta property="og:title" content="Straightcraft Studios"/>
+    <meta property="og:description" content="Minecraft Straight Real"/>
+    <meta property="og:site_name" content="Straightcraft"/>
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image" content="https://pridecraft.gay/banner.png"/>
     <link type="application/json+oembed" href="https://pridecraft.gay/oembed.json"/>
@@ -24,8 +24,8 @@ import { ChevronDownIcon } from "svelte-feather-icons";
 </svelte:head>
 <header class="h-16 p-4 bg-surface0 flex flex-row space-x-2 items-center pr-8 mr-20 rounded-br-full">
     <a href="/" class="text-xl font-semibold flex flex-row items-center gap-2">
-        <img class="w-10 h-10 rounded-lg" src="/favicon.png" alt="Pridecraft Studios Icon">
-        Pridecraft Studios
+        <img class="w-10 h-10 rounded-lg" src="/favicon.png" alt="Straigtcraft Studios Icon">
+        Straightcraft Studios
     </a>
     <div class="grow" aria-hidden="true"></div>
     <nav class="flex flex-row gap-2">
@@ -43,12 +43,12 @@ import { ChevronDownIcon } from "svelte-feather-icons";
             <MenuItems class="absolute flex flex-col bg-surface1 mt-2 w-32 origin-top-left rounded-lg shadow-lg focus:outline-none">
                 <MenuItem class="contents">
                     <a href="/pridepack" class="hover:bg-surface2 text-lg rounded-t-lg p-2">
-                        Pridepack
+                        StraightPack
                     </a>
                 </MenuItem>
                 <MenuItem class="contents">
                     <a href="/pridegui" class="hover:bg-surface2 text-lg p-2">
-                        PrideGUI
+                        StraightGUI
                     </a>
                 </MenuItem>
 <!--            <MenuItem class="contents">
