@@ -1,26 +1,22 @@
 <script lang="ts">
-  export let id: string;
-  export let title: string | null;
-  export let link: string;
-  export let alt: string | null;
-  export let rel: string | null;
-  export let head: string;
-  export let name: string;
+	export let id: string;
+	export let link: string;
+	export let rel: string | null;
+	export let head: string;
+	export let name: string;
 
-  // Set `alt` automatically when applicable.
-  if (!alt) {
-    alt = name + "'s logo";
-  }
-
-  // Set `title` automatically when applicable.
-  if (!title) {
-    title = head + ' ' + name;
-  }
+	export let ext: string = 'webp';
+	export let logo: string = `${id}.${ext}`;
+	export let src: string = `/assets/logos/${logo}`;
+	export let title: string = `${head} ${name}`;
+	export let alt: string = `${name}'s logo`;
 </script>
 
-<a rel="{rel}" href="{link}" title="{title}" id="{id}" class="badge">
-  <div>
-    <img src="/assets/logos/{id}.webp" aria-labelledby="{id}-label" alt="{alt}"/>
-    <span id="{id}-label">{head}<br/><b>{name}</b></span>
-  </div>
+<!-- Fun fact: Browsers hate putting divs in anchors. So much for no semantics. -->
+<!-- Note: `hidden` on image and `reader-only` is to provide a sensible no-CSS/reader fallback. -->
+<a class="badge" {rel} href={link} {title} {id}>
+	<span>
+		<img {src} width="48" height="48" aria-labelledby="{id}-label" {alt} hidden />
+		<span id="{id}-label">{head} <b>{name}</b><span class="reader-only">. </span></span>
+	</span>
 </a>

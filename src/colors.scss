@@ -1,0 +1,75 @@
+@use 'sass:color';
+@use '@catppuccin/palette/scss/catppuccin';
+
+@function fetch-catppuccin-palette($entry) {
+	@if map-has-key(catppuccin.$palette, $entry) {
+		@return map-get(catppuccin.$palette, $entry);
+	}
+	@error "Unknown `#{$entry}` in Catppuccin";
+}
+
+@function color($entry, $color) {
+	$sub-palette: fetch-catppuccin-palette($entry);
+	@if map-has-key($sub-palette, $color) {
+		@return map-get($sub-palette, $color);
+	}
+	@error "Unknown `#{$color}` in Catppuccin palette `#{$entry}`";
+}
+
+@mixin define-colors($entry) {
+	// For some reason function calling doesn't work without wrapping it here.
+	// Oh well.
+	--base: #{color($entry, 'base')};
+	--text: #{color($entry, 'text')};
+	--crust: #{color($entry, 'crust')};
+	--mantle: #{color($entry, 'mantle')};
+	--surface0: #{color($entry, 'surface0')};
+	--surface1: #{color($entry, 'surface1')};
+	--surface2: #{color($entry, 'surface2')};
+	//--overlay0: #{color($entry, "overlay0")};
+	--overlay1: #{color($entry, 'overlay1')};
+	//--overlay2: #{color($entry, "overlay2")};
+
+	--blue: #{color($entry, 'blue')};
+	--sky: #{color($entry, 'sky')};
+	--lavender: #{color($entry, 'lavender')};
+}
+
+:root {
+	@include define-colors(latte);
+
+	@media screen and (prefers-color-scheme: dark) {
+		@include define-colors(macchiato);
+	}
+
+	& {
+		background-color: var(--base);
+		color: var(--text);
+
+		--link: var(--blue);
+		--link-hover: var(--sky);
+		--link-visited: var(--lavender);
+
+		--transition-time: 0.25s;
+	}
+}
+
+a {
+	transition:
+		background-color var(--transition-time),
+		color var(--transition-time);
+
+	color: var(--link);
+
+	&:visited {
+		color: var(--link-visited);
+	}
+
+	&:hover {
+		color: var(--link-hover);
+	}
+}
+
+header {
+	background-color: var(--surface0);
+}

@@ -1,6 +1,7 @@
 <script lang="ts">
-import social from '$lib/vars/social';
 import devs from '$lib/vars/devs';
+
+import { Socials } from '$lib/boilerplate';
 </script>
 
 # Pridecraft Studios
@@ -10,7 +11,7 @@ We make everything from Resource Packs to Mods, without overgaying the
 game and making it look like somebody just vomited rainbows all over the place.
 
 The only things we feel more free to “overqueer” (not that there is such a thing, too much gayness) is our mod, because,
-well, it’s *our* mod.
+well, it’s _our_ mod.
 
 In our modifications, we aim to not make the whole game rainbow. Not changing the terrain blocks, for example, is
 something we do to make the game not look like flat rainbows.
@@ -21,19 +22,7 @@ very rainbow biome generation will at least make some sense.
 If you want to contribute, check out our [Github](https://git.pridecraft.gay/) repositories, or
 our [Crowdin](https://translate.pridecraft.gay)
 
-## Socials
-
-<div class="badges">
-{#each Object.entries(social) as [key, value]}
-<a rel="me" href="{value.link}" title="{value.alt}">
-    {#if value.icon}
-        <img src="{value.icon}" alt="{value.alt}"/>
-    {:else}
-        {value.alt}
-    {/if}
-</a>
-{/each}
-</div>
+<Socials />
 
 ## Developers
 
