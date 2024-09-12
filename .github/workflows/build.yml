@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
+      - name: Install packages
+        run: npm install
       - name: Build with NPM
         run: npm run build
       - name: Test ESLint
