@@ -28,7 +28,7 @@ import { Who, Socials, Donate, WwpMusic } from '$lib/boilerplate';
         alt="GitHub Commit Activity"/>
 </aside>
 
-This is PridePack, a Resource Pack made by [Pridecraft Studios](https://pridecraft.gay).
+This is PridePack, a Resource Pack made by [Pridecraft Studios].
 It comes with many LGBT Pride additions, such as paintings, beds, mobs and Main Menu changes.
 
 <Donate/>
@@ -59,3 +59,5 @@ Pridepack by Pridecraft Studios is licensed under [CC BY-SA 4.0](https://creativ
 </small>
 
 <Socials/>
+
+[Pridecraft Studios]: /

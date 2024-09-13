@@ -28,7 +28,7 @@ import { Who, Socials, Donate, WwpMusic } from '$lib/boilerplate';
         alt="GitHub Commit Activity"/>
 </aside>
 
-This is Faithful Pride. A LGBTQ+ Pride themed Resource Pack made by [Pridecraft Studios](https://git.pridecraft.gay/),
+This is Faithful Pride. A LGBTQ+ Pride themed Resource Pack made by [Pridecraft Studios],
 with the 32x quality and looks of [Faithful](https://faithfulpack.net/). We make Minecraft queer.
 
 <Donate />
@@ -48,3 +48,5 @@ TODO:
 </ul>
 
 <Socials />
+
+[Pridecraft Studios]: /
