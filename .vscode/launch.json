@@ -5,11 +5,23 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"command": "npm run dev",
+			"name": "Run dev server",
+			"request": "launch",
+			"type": "node-terminal"
+		},
+		{
 			"type": "chrome",
 			"request": "launch",
 			"name": "Launch Chrome against localhost",
-			"url": "http://localhost:8080",
-			"webRoot": "${workspaceFolder}"
+			"url": "http://localhost:5173",
+			"webRoot": "${workspaceFolder}/build"
+		}
+	],
+	"compounds": [
+		{
+			"name": "Compound",
+			"configurations": ["Run dev server", "Launch Chrome against localhost"]
 		}
 	]
 }
