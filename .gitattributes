@@ -1,0 +1,26 @@
+* text=auto
+
+# Marks Markdown as valid
+src/**/*.md linguist-documentation=false
+src/**/*.md linguist-detectable=true
+
+# Svelte Markdown is still Svelte code
+*.svelte.md linguist-language=svelte
+
+# Marks JSON as valid
+src/**/*.json linguist-detectable=true
+
+# .ts and .js at root are just configs
+/*.ts linguist-detectable=false
+/*.js linguist-detectable=false
+
+# In case anyone ever adds batch script files
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# General enforcement of not breaking things
+*.png binary
+*.jpg binary
+*.jxl binary
+*.webp binary
+*.avif binary
