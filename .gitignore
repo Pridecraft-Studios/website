@@ -6,6 +6,11 @@ node_modules
 # Temporary messes in the tree
 /static/assets/img/**/*.png
 tmp
+*.log
+
+# Not really necessary
+package-lock.json
+yarn.lock
 
 # Output
 .output
