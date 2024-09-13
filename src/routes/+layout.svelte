@@ -2,7 +2,7 @@
 	import '../app.scss';
 
 	import Popup from '$lib/components/Popup.svelte';
-	import Link from '$lib/components/Link.svelte';
+	import { LinkListEntry as Link } from '$lib/boilerplate';
 </script>
 
 <svelte:head>
