@@ -23,8 +23,19 @@ jobs:
       - name: Test ESLint
         run: npm run lint
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3 # Basically required if you want to use GitHub Pages
         with:
-          name: build-artifacts
-          path: |
-            build/
+          path: build/
+  deploy:
+    needs: build
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
