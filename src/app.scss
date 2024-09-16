@@ -1,7 +1,7 @@
 @use 'branding';
 @use 'colors';
 
-$header-size: 3.5rem;
+$header-size: 2.5rem;
 $border-radius: 0.5rem;
 
 :root {
@@ -37,6 +37,10 @@ header {
 	font-size: 2rem;
 
 	padding: 0.5rem 4rem;
+
+	@media (max-width: 1000px) {
+    	padding: 0.5rem 5px;
+    }
 
 	.grow {
 		margin: auto;
@@ -111,7 +115,7 @@ header {
 		cursor: pointer;
 
 		padding-left: 0.4rem;
-		border-radius: $border-radius;
+		border-radius: $border-radius $border-radius 0 0;
 
 		> svg {
 			transition: rotate 0.15s;
@@ -125,13 +129,13 @@ header {
 		opacity: 0;
 		visibility: hidden;
 		position: absolute;
-		top: calc($header-size - 0.1rem);
 		right: 0;
 
 		background-color: var(--surface1);
 		margin: 0;
-		padding: 0.5rem; //0.1rem 0.5rem;
+		padding: 0.25rem;
 		border-radius: $border-radius;
+		border-top-right-radius: 0;
 	}
 
 	a {
@@ -166,6 +170,10 @@ header {
 	align-items: center;
 
 	gap: 0.45rem;
+
+	@media (max-width: 640px) {
+		span {display: none;}
+	}
 }
 
 .shields {
@@ -196,6 +204,7 @@ header {
 	flex-direction: row;
 	justify-content: center;
 	gap: 0.5em;
+	padding: 0;
 
 	img {
 		display: block;
@@ -212,6 +221,18 @@ header {
 		list-style-type: none;
 		block-size: fit-content;
 		margin: 0;
+	}
+
+	@media (max-width: 640px) {
+		.badge > span {
+			> :first-child {
+				margin: calc(28px - (var(--icon) / 2));
+			}
+
+			> span {
+				display: none;
+			}
+		}
 	}
 }
 

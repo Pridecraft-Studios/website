@@ -29,7 +29,6 @@
 	</a>
 	<div class="grow" aria-hidden="true"></div>
 	<nav>
-		<a href="/">Home</a>
 		<Popup id="projects" label="Projects">
 			<ul>
 				<Link href="/pridepack">Pridepack</Link>
