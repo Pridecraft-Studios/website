@@ -24,7 +24,7 @@
 </svelte:head>
 <header>
 	<a id="logo" href="/">
-		<img src="/logo.svg" alt="Pridecraft Studios Icon" width="56" height="56" />
+		<img src="/logo.svg" alt="" width="56" height="56" aria-labelledby="logo" />
 		<span>Pridecraft Studios</span>
 	</a>
 	<div class="grow" aria-hidden="true"></div>
