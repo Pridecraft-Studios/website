@@ -21,6 +21,8 @@ src/**/*.json linguist-detectable=true
 # General enforcement of not breaking things
 *.png binary
 *.jpg binary
+*.ico binary
+*.jpeg binary
 *.jxl binary
 *.webp binary
 *.avif binary

@@ -4,9 +4,12 @@ node_modules
 .idea
 
 # Temporary messes in the tree
-/static/assets/img/**/*.png
+/static/banners/**/*.png
+/static/gallery/**/*.png
 tmp
 *.log
+*.ico
+!favicon.ico
 
 # Not really necessary
 package-lock.json

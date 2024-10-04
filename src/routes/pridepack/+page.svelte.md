@@ -2,6 +2,8 @@
 import Badge from '$lib/components/BadgeRaw.svelte';
 import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
+import DynPicture from '$lib/components/DynPicture.svelte';
+import YouTube from '$lib/components/YouTube.svelte';
 import Shield from '$lib/shields/Shield.svelte';
 import ModrinthShield from '$lib/shields/Modrinth.svelte';
 import CurseForgeShield from '$lib/shields/CurseForge.svelte';
@@ -33,13 +35,40 @@ It comes with many LGBT Pride additions, such as paintings, beds, mobs and Main 
 
 <Donate/>
 
-## Screenshots
+## Gallery
 
-<Picture name="biis-pollinating-allium" alt="A few biis pollinating a flower with glow berries on the background" size="1920w" />
-<Picture name="biis-pollinating-azalea" alt="A group of biis, many of the baby variant, pollinating an Azalea Bush" size="1920w" />
-<Picture name="bii-jungle" alt="Bii bees in a jungle" size="1920w" />
-<Picture name="trans-allium" alt="Trans-coloured alliums scattered around" size="1920w" />
-<Picture name="pride-flag-paintings" alt="Six pride flag themed paitings on the walls of a Lush Cave" size="1920w" />
+<p class="gallery prioritize-2">
+
+<YouTube id="ZyazvpZAmGU" title="Pridepack Trailer on YouTube." />
+
+<Picture name="pridepack/banner" order="avif" original="avif"
+	alt="The Pride Pack banner, featuring a rainbow bed, a bii, an aroace axolotl, a sleeping fox,
+		chiseled bookshelves with rainbow-colored books, and a gay flag painting."
+/>
+
+<DynPicture name="bookshelves" fallback="jpeg" fallbackSize="3840x2160" original order="avif"
+	alt="Pride-themed chiseled bookshelves, candles and biis surrounding an enchanting table in a lush cave."
+/>
+
+<DynPicture name="aquarium" fallback="jpeg" fallbackSize="3840x2160" original order="avif"
+	alt="Trans, lesbian, progress and aroace themed axolotls in an aquarium,
+		featuring pride, lesbian and asexual flag paintings to the left."
+/>
+
+<DynPicture name="gallery" fallback="jpeg" fallbackSize="3840x2160" original order="avif"
+	alt="A gallery featuring the pansexual, progress, rainbow and bisexual pride flags, along with an ally flag."
+/>
+
+<DynPicture name="foxes" fallback="jpeg" fallbackSize="3840x2160" original order="avif"
+	alt="Two foxes in front of a fire place,
+		one of which is sleeping while the other is wearing pink &amp; white striped thigh-high socks."
+/>
+
+<DynPicture name="bedroom" fallback="jpeg" fallbackSize="3840x2160" original order="avif"
+	alt="A bedroom featuring pride-themed candles and bed, with a sniffer peeking in."
+/>
+
+</p>
 
 <Who/>
 

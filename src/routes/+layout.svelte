@@ -17,22 +17,22 @@
 	<meta property="og:description" content="Minecraft Gay Real" />
 	<meta property="og:site_name" content="Pridecraft" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta property="og:image" content="https://pridecraft.gay/banner.png" />
+	<meta property="og:image" content="https://pridecraft.gay/banner.jpeg" />
 	<link type="application/json+oembed" href="https://pridecraft.gay/oembed.json" />
 	<link rel="preconnect" href="https://fonts.bunny.net" />
 	<link href="https://fonts.bunny.net/css?family=abeezee:400,400i|inter:400,800" rel="stylesheet" />
 </svelte:head>
 <header>
 	<a id="logo" href="/">
-		<img src="/favicon.png" alt="Pridecraft Studios Icon" width="56" height="56" />
+		<img src="/logo.svg" alt="Pridecraft Studios Icon" width="56" height="56" />
 		<span>Pridecraft Studios</span>
 	</a>
 	<div class="grow" aria-hidden="true"></div>
 	<nav>
 		<Popup id="projects" label="Projects">
 			<ul>
-				<Link href="/pridepack">Pridepack</Link>
-				<Link href="/pridegui">PrideGUI</Link>
+				<Link href="/pridepack">Pride Pack</Link>
+				<Link href="/pridegui">Pride GUI</Link>
 				<!--Link href="/joy">Joy</Link-->
 				<!--Link href="/mspride">MSPRIDE</Link-->
 				<Link href="/pridebones">Pride Bones</Link>

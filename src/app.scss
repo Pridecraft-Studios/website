@@ -13,7 +13,8 @@ body {
 }
 
 svg,
-img {
+img,
+video {
 	width: auto;
 	height: auto;
 	max-width: 100%;
@@ -39,8 +40,8 @@ header {
 	padding: 0.5rem 4rem;
 
 	@media (max-width: 1000px) {
-    	padding: 0.5rem 5px;
-    }
+		padding: 0.5rem 5px;
+	}
 
 	.grow {
 		margin: auto;
@@ -172,7 +173,61 @@ header {
 	gap: 0.45rem;
 
 	@media (max-width: 640px) {
-		span {display: none;}
+		span {
+			display: none;
+		}
+	}
+}
+
+.gallery {
+	> * {
+		width: 100%;
+		aspect-ratio: 16/9;
+
+		picture {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	// Mobile quirks mode
+	img,
+	svg,
+	video {
+		width: 100%;
+	}
+
+	*:not(source) {
+		display: block;
+	}
+
+	@media (min-width: 640px) {
+		display: flex;
+		flex-flow: row wrap;
+		gap: 4px;
+
+		> * {
+			width: calc(50% - 2px);
+		}
+
+		> :first-child,
+		&.prioritize-2 > :is(:nth-child(2), :last-child:nth-child(2n + 1)),
+		&:not(.prioritize-2) > :last-child:nth-child(2n + 2) {
+			width: 100%;
+		}
+	}
+}
+
+.video {
+	position: relative;
+	> * {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: unset;
 	}
 }
 

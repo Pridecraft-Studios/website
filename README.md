@@ -27,7 +27,7 @@ You may also want to make a new branch and pull request if you are making signif
 
 ### Previewing:
 
-Locally: `npm run dev` *or* `npm run build && npm run preview`
+Locally: `npm run dev` _or_ `npm run build && npm run preview`
 
 Remote: Check the `Deploy to Cloudflare Pages` action for a live link[^1], if it builds properly. You tested locally, right?
 
