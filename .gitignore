@@ -11,6 +11,9 @@ tmp
 *.ico
 !favicon.ico
 
+# Mandate `.jpeg` extension
+*.jpg
+
 # Not really necessary
 package-lock.json
 yarn.lock
