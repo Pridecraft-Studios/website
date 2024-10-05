@@ -2,7 +2,7 @@
 	import '../app.scss';
 
 	import Popup from '$lib/components/Popup.svelte';
-	import { LinkListEntry as Link } from '$lib/boilerplate';
+	import { RosetteLinkListEntry as Link } from '$lib/boilerplate';
 </script>
 
 <svelte:head>
@@ -23,20 +23,20 @@
 	<link href="https://fonts.bunny.net/css?family=abeezee:400,400i|inter:400,800" rel="stylesheet" />
 </svelte:head>
 <header>
-	<a id="logo" href="/">
-		<img src="/logo.svg" alt="" width="56" height="56" aria-labelledby="logo" />
-		<span>Pridecraft Studios</span>
+	<a class="logo" href="/">
+		<img src="/logo.svg" alt="" width="48" height="48" aria-labelledby="logo" />
+		<span id="logo">Pridecraft Studios</span>
 	</a>
 	<div class="grow" aria-hidden="true"></div>
 	<nav>
 		<Popup id="projects" label="Projects">
 			<ul>
-				<Link href="/pridepack">Pride Pack</Link>
-				<Link href="/pridegui">Pride GUI</Link>
-				<!--Link href="/joy">Joy</Link-->
-				<!--Link href="/mspride">MSPRIDE</Link-->
-				<Link href="/pridebones">Pride Bones</Link>
-				<!--Link href="/faithfulpride">Faithful Pride</Link-->
+				<Link id="pridepack" type="bi">Pride Pack</Link>
+				<Link id="pridegui" type="gay">Pride GUI</Link>
+				<!--Link id="joy">Joy</Link-->
+				<!--Link id="mspride">MSPRIDE</Link-->
+				<Link id="pridebones" type="trans">Pride Bones</Link>
+				<!--Link id="faithfulpride">Faithful Pride</Link-->
 			</ul>
 		</Popup>
 	</nav>
