@@ -31,11 +31,11 @@
 	<nav>
 		<Popup id="projects" label="Projects">
 			<ul>
-				<Link id="pridepack" type="bi">Pride Pack</Link>
-				<Link id="pridegui" type="gay">Pride GUI</Link>
+				<Link id="pridepack" type="bi no-bg">Pride Pack</Link>
+				<Link id="pridegui" type="gay no-bg">Pride GUI</Link>
 				<!--Link id="joy">Joy</Link-->
 				<!--Link id="mspride">MSPRIDE</Link-->
-				<Link id="pridebones" type="trans">Pride Bones</Link>
+				<Link id="pridebones" type="trans no-bg">Pride Bones</Link>
 				<!--Link id="faithfulpride">Faithful Pride</Link-->
 			</ul>
 		</Popup>
