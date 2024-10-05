@@ -102,11 +102,7 @@ header {
 	position: relative;
 	display: inline-block;
 
-	> input {
-		display: none;
-	}
-
-	> label {
+	> span {
 		transition:
 			background-color var(--transition-time),
 			color var(--transition-time);
@@ -147,8 +143,7 @@ header {
 		}
 	}
 
-	&:hover > label,
-	> input:checked ~ label {
+	&:hover > span {
 		background-color: var(--surface1);
 		color: var(--link-hover);
 
@@ -157,8 +152,7 @@ header {
 		}
 	}
 
-	&:hover > :last-child,
-	> input:checked ~ :last-child {
+	&:hover > :last-child {
 		opacity: 1;
 		visibility: visible;
 	}
