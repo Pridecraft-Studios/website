@@ -16,7 +16,7 @@ Recommended to avoid:
 ## The encoders in use are:
 
 - libwebp's `cwebp -preset photo -m 6 -z 9 input.png output.webp`
-- libjxl's `cjxl input.png output.jxl "--brotli_effort=11" -e 9`
+- libjxl's `cjxl input.png output.jxl "--brotli_effort=11" -e 10`
 - libjxl/jpegli's `cjpegli input.png output.jpeg`
 - libavif's `avifenc -s 0 --ignore-exif --ignore-xmp input.png output.avif`
 
@@ -25,18 +25,23 @@ to ensure that they can consistently compress into small but usable files.
 
 The pipeline in [scaler.ps1] is currently configured to:
 
-- Emit AVIF at quality 70 with YUV 4:4:4. For most scenes, this generally does well.
-- Emit JPEG at distance 1.5 with YUV 4:4:4. For nearly all scenes, this does well.
+- Emit AVIF at quality 60 with YUV 4:4:4.
+  - For most scenes, generally does well, but we're serving rather oversized images.
+- Emit JPEG at distance 2 with YUV 4:4:4.
+  - At distance 1 and 1.5, it does well for nearly all scenes.
 - Emit 360p, 720p and 1080p scales of input.
   - This allows for data saving and responsiveness as the client doesn't need to download as large of files.
+
+Note: As AVIF is baseline: Lossy WebP is to no longer be used.
+Prefer AVIF and only provide the highest resolution 'distance 1' JPEG as fallback.
 
 With these quality considerations, for noisy shader-intensive images,
 the recommended encoding settings are of the following:
 
 - AVIF quality 60-80 with YUV 4:4:4. Highly scene dependent.
 - JPEG using Jpegli on distance 2-1.5 with YUV 4:4:4. Hardly changes with scene complexity.
-  - JPEG XL (a.k.a., JXL) should generally perform similary but with marginally smaller file sizes.
-- WebP quality 90 using photo mode.
+  - JPEG XL (a.k.a., JXL) generally performs similar or better with smaller file sizes.
+- WebP quality 90 using either the `drawing` or `photo` presets.
   - Important: WebP 90 may not always be within quality constraints and thus is disqualified.
   - Note: This is often larger than Jpegli.
 
@@ -45,19 +50,20 @@ For flat images, the recommended settings are of the following:
 - AVIF quality 50-60 with YUV 4:4:4 or YUV 4:2:0.
 - JPEG using Jpegli on distance 1.5-1 with YUV 4:4:4.
   - Note: This may be larger than WebP, and introduce more noise than favourable.
-- WebP quality 90 using photo mode.
+- WebP quality 90 using `drawing` mode.
   - Being a video codec, this ends up excelling over JPEG.
 
 ### Encoders to avoid:
 
 - `libjpeg-turbo`, `mozjpeg`
   - Offers subpar quality at a given size in comparison to `jpegli`.
+  - Did you know: `cjpegli -d25` produces higher quality, smaller images than `libjpeg` at quality 0.
 - Non-AOM AVIF encoders, including the GNU Image Manipulation Program
   - Fails to return the same visual quality at a given size; may introduce artifacts.
 - `cwebp` at quality <80
   - Always fails in retaining visual quality even in simple scenes.
 
-## Encoded Quality Settings Picked
+## Encoded Quality Settings Considered
 
 Current considerations are against the following formats: AVIF, JPEG via Jpegli, WebP
 
