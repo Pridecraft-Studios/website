@@ -117,7 +117,7 @@
 
 $border-radius: 8px;
 
-/* I'm sure this is intended */
+// I'm sure this is intended
 .badge {
 	font-family: 'Inter', Arial, FreeSans, sans-serif;
 	color: #eaeaea;
@@ -153,14 +153,12 @@ $border-radius: 8px;
 			}
 		}
 
-		/**
-		 * Fixes a rendering bug in Firefox where the
-		 * shadow doesn't cross the div boundary.
-		 *
-		 * This essentially makes the image and sub-div forcefully
-		 * grow the parent div rather than relying on padding to
-		 * do so correctly.
-		 */
+		// Fixes a rendering bug in Firefox where the
+		// shadow doesn't cross the div boundary.
+		//
+		// This essentially makes the image and sub-div forcefully
+		// grow the parent div rather than relying on padding to
+		// do so correctly.
 		> :first-child {
 			margin-left: calc(30px - (var(--icon) / 2));
 		}
