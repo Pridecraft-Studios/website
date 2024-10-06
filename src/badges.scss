@@ -86,6 +86,9 @@
 	}
 }
 
+@include root-linear(twitter, #051F30, #031420, $bold: #1D9BF0);
+@include root-linear(bluesky, #00A5E4, #0076B1, $bold: #FFF);
+@include root-linear(threads, #1B1B1B, #000, $bold: #a0b0c0);
 
 // Badge implementation
 .badges {

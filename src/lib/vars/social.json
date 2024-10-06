@@ -1,17 +1,4 @@
 {
-	"instagram": {
-		"head": "Check out our",
-		"name": "Instagram",
-		"alt": "Check out the Insta",
-		"link": "https://www.instagram.com/pridecraftstudios/",
-		"ext": "svg"
-	},
-	"youtube": {
-		"head": "Watch us on",
-		"name": "Youtube",
-		"link": "https://youtube.com/@PridecraftStudios",
-		"ext": "svg"
-	},
 	"discord": {
 		"head": "Chat with us on",
 		"name": "Discord",
@@ -22,6 +9,37 @@
 		"head": "Chat with us on",
 		"name": "Mastodon",
 		"link": "https://tech.lgbt/@pridecraft",
+		"ext": "svg"
+	},
+	"youtube": {
+		"head": "Watch us on",
+		"name": "Youtube",
+		"link": "https://youtube.com/@PridecraftStudios",
+		"ext": "svg"
+	},
+	"twitter": {
+		"head": "Chat with us on",
+		"name": "Twitter",
+		"link": "https://twitter.com/pridecraftreal",
+		"ext": "svg"
+	},
+	"bluesky": {
+		"head": "Chat with us on",
+		"name": "Bluesky",
+		"link": "https://bsky.app/profile/pridecraft.gay",
+		"ext": "svg"
+	},
+	"threads": {
+		"head": "Chat with us on",
+		"name": "Threads",
+		"link": "https://threads.net/@pridecraftstudios",
+		"ext": "svg"
+	},
+	"instagram": {
+		"head": "Check out our",
+		"name": "Instagram",
+		"alt": "Check out the Insta",
+		"link": "https://www.instagram.com/pridecraftstudios/",
 		"ext": "svg"
 	}
 }
