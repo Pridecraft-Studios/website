@@ -37,6 +37,7 @@ It has a variant for every Minecraft version, starting from Minecraft Beta 1.7.3
 ![PrideGUI banner](https://cdn.modrinth.com/data/6mcKx2Pb/images/05250c177741152dca8e964ea47a3806d23d4432.png)
 
 ### Joy
+
 [Joy](https://git.pridecraft.gay/joy) is an upcoming mod adding pride content,
 including all content from Pridepack, to Minecraft.
 It will even feature its own OST!
@@ -51,7 +52,6 @@ which has a more simplistic look to it, similar to the Minecraft Trailers art st
 	alt="The Pride Pack banner, featuring a rainbow bed, a bii, an aroace axolotl, a sleeping fox,
 		chiseled bookshelves with rainbow-colored books, and a gay flag painting."
 />
-
 
 <Socials />
 

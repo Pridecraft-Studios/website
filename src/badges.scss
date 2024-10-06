@@ -9,7 +9,9 @@
 }
 
 @mixin var($to, $input, $type) {
-	@if $input { --#{$to}: #{validate($input, $to, $type)}; }
+	@if $input {
+		--#{$to}: #{validate($input, $to, $type)};
+	}
 }
 
 @mixin badge($fill, $bold: null, $icon: null, $icon-fill: null) {
@@ -21,13 +23,10 @@
 
 @mixin linear-badge($start, $stop, $bold: null, $icon: null, $icon-fill: null) {
 	@include badge(
-		$fill: linear-gradient(
-			validate($start, start, 'color'),
-			validate($stop, stop, 'color'),
-		),
+		$fill: linear-gradient(validate($start, start, 'color'), validate($stop, stop, 'color')),
 		$bold: $bold,
 		$icon: $icon,
-		$icon-fill: $icon-fill,
+		$icon-fill: $icon-fill
 	);
 }
 
@@ -65,14 +64,14 @@
 	instagram,
 	// Colours adjusted for allowing the text to be legible
 	linear-gradient(
-		45deg,
-		#{color.adjust(#ffd600, $lightness: -15%, $saturation: -15%)},
-		#{color.adjust(#ff7a00, $lightness: -15%, $saturation: -15%)},
-		#{color.adjust(#ff0069, $lightness: -15%, $saturation: -15%)},
-		#{color.adjust(#d300c5, $lightness: -15%, $saturation: -15%)},
-		#{color.adjust(#7638fa, $lightness: -15%, $saturation: -15%)}
-	),
-	$bold: white,
+			45deg,
+			#{color.adjust(#ffd600, $lightness: -15%, $saturation: -15%)},
+			#{color.adjust(#ff7a00, $lightness: -15%, $saturation: -15%)},
+			#{color.adjust(#ff0069, $lightness: -15%, $saturation: -15%)},
+			#{color.adjust(#d300c5, $lightness: -15%, $saturation: -15%)},
+			#{color.adjust(#7638fa, $lightness: -15%, $saturation: -15%)}
+		),
+	$bold: white
 );
 
 @include root-linear(youtube, #321513, #210e0c, $bold: #f00, $icon: 44px);
@@ -86,9 +85,9 @@
 	}
 }
 
-@include root-linear(twitter, #051F30, #031420, $bold: #1D9BF0);
-@include root-linear(bluesky, #00A5E4, #0076B1, $bold: #FFF);
-@include root-linear(threads, #1B1B1B, #000, $bold: #a0b0c0);
+@include root-linear(twitter, #051f30, #031420, $bold: #1d9bf0);
+@include root-linear(bluesky, #00a5e4, #0076b1, $bold: #fff);
+@include root-linear(threads, #1b1b1b, #000, $bold: #a0b0c0);
 
 // Badge implementation
 .badges {
