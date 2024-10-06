@@ -4,5 +4,5 @@ let value = Math.floor(Math.random() * 999) + 1;
 
 # You have been frogged!
 
-![gay frog is not real and cant hurt you. gay frog:](/assets/frog.webp)
+![gay frog is not real and cant hurt you. gay frog:](/assets/frog.avif)
 **_{value}M_** _other people were also frogged!_
