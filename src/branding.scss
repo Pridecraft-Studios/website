@@ -1,103 +1,87 @@
 @use 'sass:color';
+@use 'sass:meta';
+
+@function validate($input, $name, $type) {
+	@if meta.type-of($input) != $type {
+		@error '$#{$name} #{$input} is of #{meta.type-of($input)} and not a #{$type}';
+	}
+	@return $input;
+}
+
+@mixin var($to, $input, $type) {
+	@if $input { --#{$to}: #{validate($input, $to, $type)}; }
+}
+
+@mixin badge($fill, $bold: null, $icon: null, $icon-fill: null) {
+	--fill: #{$fill};
+	@include var(icon, $icon, 'number');
+	@include var(icon-fill, $icon-fill, 'color');
+	@if $bold { b { color: #{validate($bold, bold, 'color')}; } }
+}
+
+@mixin linear-badge($start, $stop, $bold: null, $icon: null, $icon-fill: null) {
+	@include badge(
+		$fill: linear-gradient(
+			validate($start, start, 'color'),
+			validate($stop, stop, 'color'),
+		),
+		$bold: $bold,
+		$icon: $icon,
+		$icon-fill: $icon-fill,
+	);
+}
+
+@mixin root-badge($name, $fill, $bold: null, $icon: null, $icon-fill: null) {
+	##{$name} {
+		@include badge($fill, $bold, $icon, $icon-fill);
+	}
+}
+
+@mixin root-linear($name, $start, $stop, $bold: null, $icon: null, $icon-fill: null) {
+	##{$name} {
+		@include linear-badge($start, $stop, $bold, $icon, $icon-fill);
+	}
+}
 
 // Mods
-#canvas {
-	--fill: linear-gradient(#ae7629, #895120);
-	b {
-		color: #f2e757;
-	}
-}
-#iris {
-	--fill: linear-gradient(#29537a, #3d572c);
-}
-#optifabric {
-	--icon-fill: #5683ff;
-	--fill: linear-gradient(#0030a1, #001850);
-}
-#optifine {
-	--fill: linear-gradient(#952e2f, #471010);
-	b {
-		color: #fab325;
-	}
-}
-#pfm {
-	--fill: linear-gradient(#f77f34, #9f4204);
-}
-#sodium {
-	--fill: linear-gradient(#7db26f, #387329);
-}
-#vulkanmod {
-	--fill: linear-gradient(#121321, #20212c);
-	b {
-		color: #a74141;
-	}
-}
+@include root-linear(canvas, #ae7629, #895120, $bold: #f2e757);
+@include root-linear(iris, #29537a, #3d572c);
+@include root-linear(optifabric, #0030a1, #001850, $icon-fill: #5683ff);
+@include root-linear(optifine, #952e2f, #471010, $bold: #fab325);
+@include root-linear(pfm, #f77f34, #9f4204);
+@include root-linear(sodium, #7db26f, #387329);
+@include root-linear(vulkanmod, #121321, #20212c, $bold: #a74141);
 
 // Distributors
-#modrinth {
-	--fill: linear-gradient(#072c13, #041c0b);
-	b {
-		color: #00d845;
-	}
-}
-#curseforge {
-	--fill: linear-gradient(#2e140b, #1e0c07);
-	--icon: 46px;
-	b {
-		color: #f16436;
-	}
-}
-#github {
-	--fill: linear-gradient(#181f29, #0f131a);
-	b {
-		color: white;
-	}
-}
+@include root-linear(modrinth, #072c13, #041c0b, $bold: #00d845);
+@include root-linear(curseforge, #2e140b, #1e0c07, $bold: #f16436, $icon: 46px);
+@include root-linear(github, #181f29, #0f131a, $bold: white);
 
 // Donations
-#patreon {
-	--fill: linear-gradient(#222, #111);
-	b {
-		color: white;
-	}
-}
+@include root-linear(patreon, #222, #111, $bold: white);
 
 // Social
-#instagram {
+@include root-badge(
+	instagram,
 	// Colours adjusted for allowing the text to be legible
-	--fill: linear-gradient(
+	linear-gradient(
 		45deg,
 		#{color.adjust(#ffd600, $lightness: -15%, $saturation: -15%)},
 		#{color.adjust(#ff7a00, $lightness: -15%, $saturation: -15%)},
 		#{color.adjust(#ff0069, $lightness: -15%, $saturation: -15%)},
 		#{color.adjust(#d300c5, $lightness: -15%, $saturation: -15%)},
 		#{color.adjust(#7638fa, $lightness: -15%, $saturation: -15%)}
-	);
-	b {
-		color: white;
-	}
-}
+	),
+	$bold: white,
+);
 
-#youtube {
-	--fill: linear-gradient(#321513, #210e0c);
-	--icon: 44px;
-	b {
-		color: #ff0000;
-	}
-}
-
-#discord {
-	--fill: linear-gradient(#1b1d31, #11121f);
-	b {
-		color: #5865f2;
-	}
-}
+@include root-linear(youtube, #321513, #210e0c, $bold: #f00, $icon: 44px);
+@include root-linear(discord, #1b1d31, #11121f, $bold: #5865f2);
 
 #mastodon {
-	--fill: linear-gradient(#1c1036, #0b0920);
+	@include badge(linear-gradient(#1c1036, #0b0920), $bold: transparent);
 	b {
 		background-image: linear-gradient(#9393ff 0 50%, #7a65d1 100%);
 		background-clip: text;
-		color: transparent;
 	}
 }
