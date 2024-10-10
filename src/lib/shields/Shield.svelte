@@ -23,10 +23,11 @@
 	}
 
 	export let alt: string = label;
+	export let title: string = alt;
 </script>
 
 {#if href}
-	<a {href}><img {src} {alt} {...$$restProps} /></a>
+	<a {href} {title}><img {src} {alt} {...$$restProps} /></a>
 {:else}
-	<img {src} {alt} {...$$restProps} />
+	<img {src} {alt} {title} {...$$restProps} />
 {/if}

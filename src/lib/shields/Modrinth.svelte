@@ -3,9 +3,9 @@
 
 	export let modid: string;
 	export let type: string = 'project';
-	export let label: string = 'Modrinth Downloads';
+	export let label: string = 'Modrinth';
 	export let color: string = '#1bd96a';
-	export let alt: string = label;
+	export let alt: string = `${label} Downloads`;
 </script>
 
 <Shield

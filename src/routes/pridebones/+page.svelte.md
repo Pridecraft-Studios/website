@@ -4,10 +4,8 @@ import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
 import DynPicture from '$lib/components/DynPicture.svelte';
 import YouTube from '$lib/components/YouTube.svelte';
-import Shield from '$lib/shields/Shield.svelte';
-import ModrinthShield from '$lib/shields/Modrinth.svelte';
-import CurseForgeShield from '$lib/shields/CurseForge.svelte';
 
+import { Modrinth, CurseForge, GitHubDownloads, GitHubCommits } from '$lib/shields';
 import { Who, Socials, Donate, WwpMusic } from '$lib/boilerplate';
 </script>
 
@@ -16,17 +14,10 @@ import { Who, Socials, Donate, WwpMusic } from '$lib/boilerplate';
 # Pride Bones
 
 <aside class="shields">
-<ModrinthShield modid="pridebones"/>
-<CurseForgeShield modid="pride-bones" type="texture-packs" projectid="1077808"/>
-<Shield href="https://git.pridecraft.gay/pridebones/releases"
-        base="github/downloads/pridecraft-studios/pridebones/total"
-        logo="github"
-        label="GitHub Downloads"
-        alt="GitHub Downloads (all assets, all releases)"/>
-<Shield href="https://git.pridecraft.gay/pridebones/commits"
-        base="github/commit-activity/t/pridecraft-studios/pridebones"
-        logo="github"
-        alt="GitHub Commit Activity"/>
+<Modrinth modid="pridebones"/>
+<CurseForge modid="pride-bones" type="texture-packs" projectid="1077808"/>
+<GitHubDownloads modid="pridebones" />
+<GitHubCommits modid="pridebones" />
 </aside>
 
 This is Pride Bones, a version of Pridepack by [Pridecraft Studios] in the style of [Bare Bones].

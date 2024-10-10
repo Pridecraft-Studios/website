@@ -2,9 +2,8 @@
 import Badge from '$lib/components/BadgeRaw.svelte';
 import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
-import Shield from '$lib/shields/Shield.svelte';
-import ModrinthShield from '$lib/shields/Modrinth.svelte';
 
+import { Modrinth, GitHubDownloads, GitHubCommits } from '$lib/shields';
 import { Who, Socials, Donate } from '$lib/boilerplate';
 </script>
 
@@ -14,16 +13,9 @@ import { Who, Socials, Donate } from '$lib/boilerplate';
 # PrideGUI
 
 <aside class="shields">
-<ModrinthShield modid="pridegui"/>
-<Shield href="https://git.pridecraft.gay/pridegui/releases"
-        base="github/downloads/pridecraft-studios/pridegui/total"
-        logo="github"
-        label="GitHub Downloads"
-        alt="GitHub Downloads (all assets, all releases)"/>
-<Shield href="https://git.pridecraft.gay/pridegui/commits"
-        base="github/commit-activity/t/pridecraft-studios/pridegui"
-        logo="github"
-        alt="GitHub Commit Activity"/>
+<Modrinth modid="pridegui"/>
+<GitHubDownloads modid="pridegui" />
+<GitHubCommits modid="pridegui" />
 </aside>
 
 This is an official addon to [PridePack](/pridepack) that changes the Minecraft GUI to have a dark theme,

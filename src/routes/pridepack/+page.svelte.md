@@ -4,10 +4,8 @@ import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
 import DynPicture from '$lib/components/DynPicture.svelte';
 import YouTube from '$lib/components/YouTube.svelte';
-import Shield from '$lib/shields/Shield.svelte';
-import ModrinthShield from '$lib/shields/Modrinth.svelte';
-import CurseForgeShield from '$lib/shields/CurseForge.svelte';
 
+import { Modrinth, CurseForge, GitHubDownloads, GitHubCommits } from '$lib/shields';
 import { Who, Socials, Donate, WwpMusic } from '$lib/boilerplate';
 
 </script>
@@ -17,17 +15,10 @@ import { Who, Socials, Donate, WwpMusic } from '$lib/boilerplate';
 # PridePack
 
 <aside class="shields">
-<ModrinthShield modid="pridepack"/>
-<CurseForgeShield modid="pride-pack" type="texture-packs" projectid="831872"/>
-<Shield href="https://git.pridecraft.gay/pridepack/releases"
-        base="github/downloads/pridecraft-studios/pridepack/total"
-        logo="github"
-        label="GitHub Downloads"
-        alt="GitHub Downloads (all assets, all releases)"/>
-<Shield href="https://git.pridecraft.gay/pridepack/commits"
-        base="github/commit-activity/t/pridecraft-studios/pridepack"
-        logo="github"
-        alt="GitHub Commit Activity"/>
+<Modrinth modid="pridepack"/>
+<CurseForge modid="pride-pack" type="texture-packs" projectid="831872"/>
+<GitHubDownloads modid="pridepack" />
+<GitHubCommits modid="pridepack" />
 </aside>
 
 This is PridePack, a Resource Pack made by [Pridecraft Studios].

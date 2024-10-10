@@ -4,9 +4,9 @@
 	export let modid: string;
 	export let projectid: string;
 	export let type: string = 'mc-mods';
-	export let label: string = 'CurseForge Downloads';
+	export let label: string = 'CurseForge';
 	export let color: string = '#f16436';
-	export let alt: string = label;
+	export let alt: string = `${label} Downloads`;
 </script>
 
 <Shield
