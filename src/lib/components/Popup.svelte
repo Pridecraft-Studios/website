@@ -4,7 +4,7 @@
 	export let label: string;
 </script>
 
-<div class="popup">
+<div class="popup" tabindex="0" role="button" aria-pressed="false">
 	<span>
 		{label}
 		<ChevronRightIcon class="inline" />

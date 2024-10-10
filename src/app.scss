@@ -126,12 +126,14 @@ header {
 	a {
 		display: block;
 
-		&:hover {
+		&:hover,
+		&:focus-within {
 			background-color: var(--surface2);
 		}
 	}
 
-	&:hover > span {
+	&:hover > span,
+	&:focus-within > span {
 		background-color: var(--surface1);
 		color: var(--link-hover);
 
@@ -140,7 +142,8 @@ header {
 		}
 	}
 
-	&:hover > :last-child {
+	&:hover > :last-child,
+	&:focus-within > :last-child {
 		opacity: 1;
 		visibility: visible;
 	}
