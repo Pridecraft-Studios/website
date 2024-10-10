@@ -103,18 +103,6 @@
 		block-size: fit-content;
 		margin: 0;
 	}
-
-	@media (max-width: 640px) {
-		.badge > span {
-			> :first-child {
-				margin: calc(28px - (var(--icon) / 2));
-			}
-
-			> span {
-				display: none;
-			}
-		}
-	}
 }
 
 $border-radius: 8px;
@@ -130,6 +118,7 @@ $border-radius: 8px;
 	border-radius: $border-radius;
 	background: var(--fill);
 	text-decoration: none;
+	text-align: left;
 
 	--icon: 40px;
 
@@ -184,5 +173,17 @@ $border-radius: 8px;
 	}
 	b {
 		color: var(--bold);
+	}
+
+	@media (max-width: 400px) {
+		> span {
+			> :first-child {
+				margin: calc(28px - (var(--icon) / 2));
+			}
+
+			> span {
+				display: none;
+			}
+		}
 	}
 }
