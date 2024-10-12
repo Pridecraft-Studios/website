@@ -138,6 +138,9 @@ footer {
 		padding: 0.25rem;
 		border-radius: $border-radius;
 		border-top-right-radius: 0;
+
+		// Midnight Lizard decided to eat the ordering.. somehow.
+		z-index: 1;
 	}
 
 	a {
