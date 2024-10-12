@@ -1,3 +1,6 @@
+<!-- Copyright (c) 2023-2024 Ampflower
+	 SPDX-License-Identifier: MIT
+	 https://git.pridecraft.gay/website/blob/HEAD/LICENSE-BADGE -->
 <script lang="ts">
 	import BadgeRaw from '$lib/components/BadgeRaw.svelte';
 	import type Badge from '$lib/types';

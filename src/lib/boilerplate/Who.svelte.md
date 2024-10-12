@@ -1,3 +1,7 @@
+<!-- Copyright (c) 2023-2024 Pridecraft Studios & contributors
+	 SPDX-License-Identifier: CC-BY-SA-4.0
+	 https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 -->
+
 ## Who
 
 We are Pridecraft Studios, a collective of developers making LGBTQ+ content for Minecraft.

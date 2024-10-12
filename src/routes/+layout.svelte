@@ -1,3 +1,6 @@
+<!-- Copyright (c) 2023-2024 Pridecraft Studios & contributors
+	 SPDX-License-Identifier: CC-BY-SA-4.0
+	 https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 -->
 <script lang="ts">
 	import '../app.scss';
 
@@ -44,3 +47,19 @@
 <main>
 	<slot />
 </main>
+<footer>
+	<hr />
+	<p>
+		Copyright © 2023-2024 Pridecraft Studios &amp;
+		<a href="https://git.pridecraft.gay/website">contributors</a>. Check the
+		<a rel="license" href="https://git.pridecraft.gay/website/blob/HEAD/LICENSE.md">license</a> for details.
+	</p>
+	<p>
+		Website designed by <a href="https://ampflower.gay">Ampflower</a> and
+		<a href="https://skye.vg/">skyevg</a>.
+	</p>
+	<p>
+		Not an official Minecraft product. Not associated, approved, or endorsed by Mojang Studios or
+		Microsoft Corporation.
+	</p>
+</footer>

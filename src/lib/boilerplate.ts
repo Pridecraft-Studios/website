@@ -1,3 +1,6 @@
+/* Copyright (c) 2023-2024 Pridecraft Studios & contributors
+ * SPDX-License-Identifier: CC-BY-SA-4.0
+ * https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 */
 import Donate from './boilerplate/Donate.svelte.md';
 import LinkListEntry from './boilerplate/LinkListEntry.svelte';
 import Rosette from './boilerplate/Rosette.svelte';

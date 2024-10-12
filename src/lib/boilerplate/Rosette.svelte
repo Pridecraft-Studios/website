@@ -1,3 +1,5 @@
+<!-- Copyright (c) 2023-2024 Pridecraft Studios & contributors
+	 All Rights Reserved -->
 <script lang="ts">
 	export let id: string;
 	export let type: string;

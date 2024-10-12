@@ -1,3 +1,6 @@
+/* Copyright (c) 2023-2024 Pridecraft Studios & contributors
+ * SPDX-License-Identifier: CC-BY-SA-4.0
+ * https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 */
 @use 'badges';
 @use 'colors';
 @use 'branding';
@@ -10,6 +13,9 @@ $border-radius: 0.5rem;
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	margin: 0;
 }
 
@@ -81,6 +87,17 @@ header {
 			flex-direction: row;
 			align-items: center;
 		}
+	}
+}
+
+footer {
+	background-color: var(--crust);
+	text-align: center;
+	font-size: smaller;
+
+	// To allow distinguishing content from the footer in CSS-less environments.
+	> hr:first-child {
+		display: none;
 	}
 }
 

@@ -1,3 +1,5 @@
+/* Copyright (c) 2023-2024 Pridecraft Studios & contributors
+ * All Rights Reserved */
 @mixin hex($a: null, $b: null, $c: null, $d: null, $e: null, $f: null) {
 	@if $a {
 		--a: #{$a};
