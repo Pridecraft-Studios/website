@@ -1,0 +1,168 @@
+/* Copyright (c) 2023-2024 Pridecraft Studios & contributors
+ * SPDX-License-Identifier: CC-BY-SA-4.0
+ * https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 */
+
+@use 'sass:color';
+
+$border-radius: 8px;
+
+.developers {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	max-width: 100%;
+	padding: 0;
+	gap: 4px;
+	flex-grow: 1;
+
+	img {
+		grid-area: avatar;
+		block-size: 96px;
+		max-width: 96px;
+		display: block;
+
+		border-radius: $border-radius * 2 - 4px;
+		background: var(--mantle);
+	}
+
+	h3 {
+		grid-area: name;
+		font-size: 1.5em;
+		margin: 0.25em 0;
+	}
+
+	> li {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		justify-items: center;
+
+		list-style-type: none;
+
+		width: min(100%, 1000px / 3 - 4px * 2 - 2px * 2 - 4px);
+
+		--light: var(--mantle);
+		--dark: var(--crust);
+		--background: linear-gradient(var(--direction) in oklab, var(--light), var(--dark));
+		--border: #ffffff30;
+		--direction: 0.5turn;
+
+		background: var(--background);
+		border-image: var(--border-image);
+		border-radius: $border-radius * 2;
+
+		> span {
+			display: flex;
+			flex-flow: column nowrap;
+			flex-grow: 1;
+			padding: 4px;
+			background: var(--foreground);
+			border-radius: $border-radius * 2;
+			border: 2px solid var(--border);
+		}
+	}
+
+	.heading {
+		display: grid;
+
+		gap: 4px;
+
+		grid-template-columns: max-content 1fr;
+		grid-template-rows: min-content 1fr;
+		grid-template-areas:
+			'avatar name'
+			'avatar roles';
+
+		@media (max-width: 360px) {
+			display: flex;
+			align-items: center;
+			flex-flow: column wrap;
+		}
+
+		.roles {
+			grid-area: roles;
+		}
+	}
+
+	.bio {
+		flex-grow: 1;
+	}
+
+	p {
+		margin: 4px 0;
+	}
+}
+
+@mixin -dev($name, $light, $dark, $direction: null) {
+	li.#{$name} {
+		--light: #{color.change($light, $lightness: 30%, $space: oklch)};
+		--dark: #{color.change($dark, $lightness: 20%, $space: oklch)};
+		@if ($direction) {
+			--direction: #{$direction};
+		}
+	}
+}
+
+@mixin -dev-raw($name, $light, $dark) {
+	li.#{$name} {
+		--light: #{$light};
+		--dark: #{$dark};
+	}
+}
+
+@include -dev-raw(Ampflower, oklch(27.5% 0.065 299.85), oklch(17.5% 0.025 326.06));
+
+li.amy {
+	--light: #1d1b16;
+	--dark: #1d1b16;
+	--background: linear-gradient(100grad in oklab, #b8b8f3 0%, #b8b8f3 40%, #f397d6 100%);
+	> span {
+		background: linear-gradient(var(--direction) in oklab, var(--light), var(--dark));
+		margin: 2px;
+		border-radius: $border-radius * 2 - 2px;
+		border: unset;
+	}
+}
+
+@include -dev(Blurryface, #fe003f, #820046);
+@include -dev(Fery, #f0f0f0, #b7e694);
+@include -dev(KTrain, #ffc0cb, #312527);
+
+li.Laxla {
+	--background: linear-gradient(
+		45deg in oklab,
+		#{color.change(color.to-space(#fb3dbc, oklch), $lightness: 15%, $chroma: 50%, $space: oklch)},
+		#{color.change(color.to-space(#0247fc, oklch), $lightness: 15%, $chroma: 50%, $space: oklch)},
+		#{color.change(color.to-space(#f8cf30, oklch), $lightness: 15%, $chroma: 50%, $space: oklch)},
+		#{color.change(color.to-space(#5df7d9, oklch), $lightness: 15%, $chroma: 50%, $space: oklch)},
+		#{color.change(color.to-space(#e95173, oklch), $lightness: 15%, $chroma: 50%, $space: oklch)}
+	);
+}
+
+li.rotgruengelb {
+	--background: linear-gradient(
+		45deg in oklab,
+		#{color.change(color.to-space(#ff4a58, oklch), $lightness: 15%, $space: oklch)},
+		#{color.change(color.to-space(#00ff61, oklch), $lightness: 15%, $space: oklch)},
+		#{color.change(color.to-space(#edff23, oklch), $lightness: 25%, $space: oklch)}
+	);
+}
+
+@include -dev(Sake, #f0f0f0, #caa358);
+@include -dev(SympathyTea, #645d4a, #606a47);
+
+li.Skye {
+	--background: linear-gradient(
+		45deg in oklab,
+		#{color.change(color.to-space(#5bcefa, oklch), $lightness: 25%, $space: oklch)},
+		#{color.change(color.to-space(#f5a9b8, oklch), $lightness: 35%, $chroma: 10%, $space: oklch)},
+		#{color.change(color.to-space(#ffffff, oklch), $lightness: 35%, $space: oklch)},
+		#{color.change(color.to-space(#f5a9b8, oklch), $lightness: 35%, $chroma: 10%, $space: oklch)},
+		#{color.change(color.to-space(#5bcefa, oklch), $lightness: 25%, $space: oklch)}
+	);
+}
+
+@include -dev(Thinkseal, #dad9d6, #425525);
+@include -dev(TheClashFruit, #f7f7f7, #00796b);
+@include -dev(Wolren, #dddcda, #040301);
+@include -dev-raw(WorldWidePixel, #094e53, #062f37);

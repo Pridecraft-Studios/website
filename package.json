@@ -15,6 +15,7 @@
 	},
 	"devDependencies": {
 		"@catppuccin/palette": "^1.2.0",
+		"@modyfi/vite-plugin-yaml": "^1.1.0",
 		"@sveltejs/adapter-static": "^3.0.4",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
@@ -29,8 +30,8 @@
 		"prettier-plugin-svelte": "^3.2.6",
 		"sass-embedded": "^1.78.0",
 		"svelte": "^4.2.19",
-		"svelte-check": "^3.6.0",
-		"svelte-feather-icons": "^3.3.0",
+		"svelte-check": "^4.0.5",
+		"svelte-feather-icons": "^4.1.0",
 		"svelte-preprocess": "^6.0.2",
 		"typescript": "^5.0.0",
 		"typescript-eslint": "^8.0.0",
