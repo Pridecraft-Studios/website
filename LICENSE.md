@@ -10,7 +10,7 @@ The Pridecraft Studios logos include `./static/logo.svg`, `./static/favicon.ico`
 Pridepack, PrideGUI, Pride Bones, Joy, and future projects.
 
 Reasonable does not include using, modifying, or deriving Pridecraft Studios' trademarks to imply sponsorship, endorsement,
-or affiliation, or to make your work or derivative work appear as if it was official Pridecraft Studios' work. 
+or affiliation, or to make your work or derivative work appear as if it was official Pridecraft Studios' work.
 
 Third party trademarks are included in the repo for call to actions, for social media or download links, on the website,
 and are owned by their respective owners. The use of their trademark is delegated to the owner's license, guidelines,
@@ -31,6 +31,7 @@ https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0
 ```
 
 Additional eligible files include:
+
 - All of `./static/gallery/pridebones/`
 - All of `./static/gallery/pridepack/`
 - `./static/assets/frog.avif`
