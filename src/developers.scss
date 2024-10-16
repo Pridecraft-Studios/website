@@ -3,6 +3,7 @@
  * https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 */
 
 @use 'sass:color';
+@use '@catppuccin/palette/scss/macchiato';
 
 $border-radius: 8px;
 
@@ -14,6 +15,7 @@ $border-radius: 8px;
 	padding: 0;
 	gap: 4px;
 	flex-grow: 1;
+	filter: drop-shadow(0 0 5px #0000004f);
 
 	img {
 		grid-area: avatar;
@@ -22,7 +24,7 @@ $border-radius: 8px;
 		display: block;
 
 		border-radius: $border-radius * 2 - 4px;
-		background: var(--mantle);
+		filter: drop-shadow(0 0 5px #0000004f);
 	}
 
 	h3 {
@@ -47,6 +49,8 @@ $border-radius: 8px;
 		--border: #ffffff30;
 		--direction: 0.5turn;
 
+		color: #{macchiato.$text};
+
 		background: var(--background);
 		border-image: var(--border-image);
 		border-radius: $border-radius * 2;
@@ -59,6 +63,9 @@ $border-radius: 8px;
 			background: var(--foreground);
 			border-radius: $border-radius * 2;
 			border: 2px solid var(--border);
+			> * {
+				filter: drop-shadow(0 0 5px #0000004f);
+			}
 		}
 	}
 
