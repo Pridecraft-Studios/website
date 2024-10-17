@@ -146,6 +146,9 @@ li.Laxla {
 	);
 }
 
+@include -dev(Lupancham, #774193, #000);
+@include -dev(polycord, #ffffff, #f15946);
+
 li.rotgruengelb {
 	--background: linear-gradient(
 		45deg in oklab,
