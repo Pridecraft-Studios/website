@@ -192,11 +192,14 @@ WorldWidePixel:
     Makes stuff on the internet.
     That's all you need to know.
   roles:
+    - manager
+    - web designer
     - texture artist
     - music artist
   projects:
     - pridepack
     - joy
+    - website
   socials:
     website: https://worldwidepixel.ca
     github: https://github.com/worldwidepixel
