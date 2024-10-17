@@ -143,7 +143,7 @@ Skye:
   bio: |
     uhhhh yeah I'll do that later
   roles:
-    - syadmin
+    - sysadmin
     - web designer
   projects:
     - website
