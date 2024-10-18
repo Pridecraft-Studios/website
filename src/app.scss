@@ -286,3 +286,37 @@ a.logo {
 		justify-content: center;
 	}
 }
+
+.varied {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0;
+	gap: 1em;
+
+	> li {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		justify-items: center;
+
+		list-style-type: none;
+		flex-flow: column;
+		flex-grow: 1;
+	}
+
+	@media (max-width: 400px) {
+		flex-flow: column;
+	}
+}
+
+h3 {
+	display: flex inline;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25em;
+}
+
+h3 > svg {
+	width: 2em;
+	height: 2em;
+}

@@ -7,7 +7,7 @@ import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
 
 import { Modrinth, GitHubDownloads, GitHubCommits } from '$lib/shields';
-import { Who, Socials, Donate } from '$lib/boilerplate';
+import { Who, Socials, Donate, Rosette } from '$lib/boilerplate';
 </script>
 
 <!-- Clyde had this so I'm adding it too -->
@@ -35,9 +35,35 @@ which has versions of the pack for Beta 1.7.3 all the way through 1.20.1.
 
 ## Where can I download PrideGUI?
 
-<ul class="badges">
-<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui" ext="svg" head="Available on" name="Modrinth"/></li>
-<li><Badge id="github" rel="me" link="https://github.com/Pridecraft-Studios/pridegui" ext="svg" head="Available on" name="GitHub"/></li>
+<ul class="varied">
+<li>
+	<h3><Rosette type="gay no-bg">Dark Mode</Rosette></h3>
+	<ul class="badges">
+	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui" ext="svg" head="Available on" name="Modrinth"/></li>
+	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui" ext="svg" head="Available on" name="GitHub"/></li>
+	</ul>
+</li>
+<li>
+	<h3><Rosette type="gay no-bg">Dark Mode - Legacy</Rosette></h3>
+	<ul class="badges">
+	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui-legacy" ext="svg" head="Available on" name="Modrinth"/></li>
+	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui/branches/all?query=legacy" ext="svg" head="Available on" name="GitHub"/></li>
+	</ul>
+</li>
+<li>
+	<h3><Rosette type="lesbian no-bg">Light Mode</Rosette></h3>
+	<ul class="badges">
+	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui-light" ext="svg" head="Available on" name="Modrinth"/></li>
+	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui/tree/light/main" ext="svg" head="Available on" name="GitHub"/></li>
+	</ul>
+</li>
+<li>
+	<h3><Rosette type="lesbian no-bg">Light Mode - Legacy</Rosette></h3>
+	<ul class="badges">
+	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui-light-legacy" ext="svg" head="Available on" name="Modrinth"/></li>
+	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui/branches/all?query=light%2Flegacy" ext="svg" head="Available on" name="GitHub"/></li>
+	</ul>
+</li>
 </ul>
 
 <small>

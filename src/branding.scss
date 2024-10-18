@@ -1,5 +1,8 @@
 /* Copyright (c) 2023-2024 Pridecraft Studios & contributors
  * All Rights Reserved */
+
+@use 'sass:color';
+
 @mixin hex($a: null, $b: null, $c: null, $d: null, $e: null, $f: null) {
 	@if $a {
 		--a: #{$a};
@@ -21,6 +24,21 @@
 	}
 }
 
+@mixin quad($a: null, $b: null, $c: null, $d: null) {
+	@if $a {
+		--a: #{$a};
+	}
+	@if $b {
+		--b: #{$b};
+	}
+	@if $c {
+		--c: #{$c};
+	}
+	@if $d {
+		--d: #{$d};
+	}
+}
+
 @mixin tri($a: null, $b: null, $c: null) {
 	@if $a {
 		--a: #{$a};
@@ -33,9 +51,12 @@
 	}
 }
 
+.rosette {
+	visibility: visible;
+}
+
 svg.rainbow,
-svg.gay,
-svg.lesbian {
+svg.gay {
 	// hex
 	--g: var(--a);
 	--h: var(--b);
@@ -43,6 +64,18 @@ svg.lesbian {
 	--j: var(--d);
 	--k: var(--e);
 	--l: var(--f);
+}
+
+svg.lesbian {
+	// quad
+	--e: var(--a);
+	--i: var(--a);
+	--f: var(--b);
+	--j: var(--b);
+	--g: var(--c);
+	--k: var(--c);
+	--h: var(--d);
+	--l: var(--d);
 }
 
 svg.trans,
@@ -77,4 +110,24 @@ svg.bi {
 
 svg.gay {
 	@include hex($a: #3e1a78, $b: #5049cb, $c: #7bade3, $d: #99e8c2, $e: #26ceaa, $f: #078d70);
+}
+
+svg.lesbian {
+	@include quad(#d362a4, #a30262, #ff9a56, #d52d00);
+}
+
+svg.pridegui {
+	--a: #3e1a78;
+	--b: #5049cb;
+	--c: #7bade3;
+	--d: #99e8c2;
+	--e: #26ceaa;
+	--f: #078d70;
+
+	--l: #a30262;
+	--k: #d362a4;
+	--j: #{color.change(#d362a4, $lightness: 80%, $chroma: 20%, $space: oklch)};
+	--i: #{color.change(#ff9a56, $lightness: 80%, $chroma: 20%, $space: oklch)};
+	--h: #ff9a56;
+	--g: #d52d00;
 }
