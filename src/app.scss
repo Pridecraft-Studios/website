@@ -1,0 +1,322 @@
+/* Copyright (c) 2023-2024 Pridecraft Studios & contributors
+ * SPDX-License-Identifier: CC-BY-SA-4.0
+ * https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 */
+@use 'badges';
+@use 'colors';
+@use 'branding';
+
+$header-size: 2.5rem;
+$border-radius: 0.5rem;
+
+:root {
+	font-family: 'ABeeZee', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+svg,
+img,
+video {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+main {
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 5px;
+
+	@media (max-width: 1010px) {
+		min-width: unset;
+		max-width: 100vw;
+		text-align: center;
+	}
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+
+	font-size: 2rem;
+
+	max-width: 1000px;
+	padding: 0.5rem max(0.5em, calc(50vw - 500px));
+
+	.grow {
+		margin: auto;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	a {
+		text-decoration: none;
+		white-space: nowrap;
+		color: inherit;
+		border-radius: $border-radius;
+
+		padding: 0.1rem 0.4rem;
+
+		&:hover {
+			background-color: var(--surface1);
+		}
+	}
+
+	svg,
+	img {
+		width: 1.5em;
+		aspect-ratio: 1;
+		border-radius: $border-radius;
+	}
+
+	> nav {
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+
+		> * {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+}
+
+footer {
+	background-color: var(--crust);
+	text-align: center;
+	font-size: smaller;
+
+	// To allow distinguishing content from the footer in CSS-less environments.
+	> hr:first-child {
+		display: none;
+	}
+}
+
+.popup {
+	position: relative;
+	display: inline-block;
+
+	> span {
+		transition:
+			background-color var(--transition-time),
+			color var(--transition-time);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		cursor: pointer;
+
+		padding-left: 0.4rem;
+		border-radius: $border-radius $border-radius 0 0;
+
+		> svg {
+			transition: rotate var(--rotate-time);
+		}
+	}
+
+	> :last-child {
+		transition:
+			opacity var(--transition-time),
+			visibility var(--transition-time);
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+
+		width: max-content;
+
+		background-color: var(--surface1);
+		margin: 0;
+		padding: 0.25rem;
+		border-radius: $border-radius;
+		border-top-right-radius: 0;
+
+		// Midnight Lizard decided to eat the ordering.. somehow.
+		z-index: 1;
+	}
+
+	a {
+		display: block;
+
+		&:hover,
+		&:focus-within {
+			background-color: var(--surface2);
+		}
+	}
+
+	&:hover > span,
+	&:focus-within > span {
+		background-color: var(--surface1);
+		color: var(--link-hover);
+
+		> svg {
+			rotate: 90deg;
+		}
+	}
+
+	&:hover > :last-child,
+	&:focus-within > :last-child {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.logo,
+a.logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	gap: 0.4rem;
+	padding: 0 0.4rem 0 0;
+
+	border-radius: 1.3em $border-radius $border-radius 1.3em;
+
+	> svg {
+		transition: rotate var(--rotate-time);
+		border-radius: 100%;
+		width: 1.3em;
+	}
+}
+
+.logo:hover svg {
+	rotate: 45deg;
+	@media (prefers-reduced-motion: reduce) {
+		rotate: unset;
+	}
+}
+
+#logo {
+	font-weight: 600;
+
+	@media (max-width: 600px) {
+		display: none;
+	}
+}
+
+.gallery {
+	> * {
+		width: 100%;
+		aspect-ratio: 16/9;
+
+		picture {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	// Mobile quirks mode
+	img,
+	svg,
+	video {
+		width: 100%;
+	}
+
+	*:not(source) {
+		display: block;
+	}
+
+	@media (min-width: 640px) {
+		display: flex;
+		flex-flow: row wrap;
+		gap: 4px;
+
+		> * {
+			width: calc(50% - 2px);
+		}
+
+		> :first-child,
+		&.prioritize-2 > :is(:nth-child(2), :last-child:nth-child(2n + 1)),
+		&:not(.prioritize-2) > :last-child:nth-child(2n + 2) {
+			width: 100%;
+		}
+	}
+}
+
+.video {
+	position: relative;
+	> * {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: unset;
+	}
+}
+
+.shields {
+	display: flex;
+	flex-flow: wrap;
+	flex-direction: row;
+	justify-content: center;
+
+	gap: 0.25em;
+
+	* {
+		display: block;
+	}
+
+	img,
+	svg {
+		// Epiphany quirk: For some reason the CurseForge shield badge behaves incorrectly with
+		// `max-width: 100%; height: auto;`. It sets the height to just less than 28px, causing
+		// it to resize the image to be less than the native width, coercing it to fit to 28px height anyways.
+		max-width: unset;
+		max-height: unset;
+	}
+}
+
+.reader-only {
+	display: none;
+}
+
+@media (max-width: 1010px) {
+	.center-small {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.varied {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0;
+	gap: 1em;
+
+	> li {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		justify-items: center;
+
+		list-style-type: none;
+		flex-flow: column;
+		flex-grow: 1;
+	}
+
+	@media (max-width: 400px) {
+		flex-flow: column;
+	}
+}
+
+h3 {
+	display: flex inline;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25em;
+}
+
+h3 > svg {
+	width: 2em;
+	height: 2em;
+}

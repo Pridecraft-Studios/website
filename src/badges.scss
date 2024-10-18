@@ -1,0 +1,191 @@
+/* Copyright (c) 2023-2024 Ampflower
+ * SPDX-License-Identifier: MIT
+ * https://git.pridecraft.gay/website/blob/HEAD/LICENSE-BADGE */
+@use 'sass:color';
+@use 'sass:meta';
+
+@function validate($input, $name, $type) {
+	@if meta.type-of($input) != $type {
+		@error '$#{$name} #{$input} is of #{meta.type-of($input)} and not a #{$type}';
+	}
+	@return $input;
+}
+
+@mixin var($to, $input, $type) {
+	@if $input {
+		--#{$to}: #{validate($input, $to, $type)};
+	}
+}
+
+@mixin badge($fill, $bold: null, $icon: null, $icon-fill: null) {
+	--fill: #{$fill};
+	@include var(icon, $icon, 'number');
+	@include var(icon-fill, $icon-fill, 'color');
+	@include var(bold, $bold, 'color');
+}
+
+@mixin linear-badge($start, $stop, $bold: null, $icon: null, $icon-fill: null) {
+	@include badge(
+		$fill: linear-gradient(validate($start, start, 'color'), validate($stop, stop, 'color')),
+		$bold: $bold,
+		$icon: $icon,
+		$icon-fill: $icon-fill
+	);
+}
+
+@mixin root-badge($name, $fill, $bold: null, $icon: null, $icon-fill: null) {
+	##{$name} {
+		@include badge($fill, $bold, $icon, $icon-fill);
+	}
+}
+
+@mixin root-linear($name, $start, $stop, $bold: null, $icon: null, $icon-fill: null) {
+	##{$name} {
+		@include linear-badge($start, $stop, $bold, $icon, $icon-fill);
+	}
+}
+
+// Mods
+@include root-linear(canvas, #ae7629, #895120, $bold: #f2e757);
+@include root-linear(iris, #29537a, #3d572c);
+@include root-linear(optifabric, #0030a1, #001850, $icon-fill: #5683ff);
+@include root-linear(optifine, #952e2f, #471010, $bold: #fab325);
+@include root-linear(pfm, #f77f34, #9f4204);
+@include root-linear(sodium, #7db26f, #387329);
+@include root-linear(vulkanmod, #121321, #20212c, $bold: #a74141);
+
+// Distributors
+@include root-linear(modrinth, #072c13, #041c0b, $bold: #00d845);
+@include root-linear(curseforge, #2e140b, #1e0c07, $bold: #f16436, $icon: 46px);
+@include root-linear(github, #181f29, #0f131a, $bold: white);
+
+// Donations
+@include root-linear(patreon, #222, #111, $bold: white);
+
+// Social
+@include root-badge(
+	instagram,
+	// Colours adjusted for allowing the text to be legible
+	linear-gradient(
+			45deg,
+			#{color.adjust(#ffd600, $lightness: -15%, $saturation: -15%)},
+			#{color.adjust(#ff7a00, $lightness: -15%, $saturation: -15%)},
+			#{color.adjust(#ff0069, $lightness: -15%, $saturation: -15%)},
+			#{color.adjust(#d300c5, $lightness: -15%, $saturation: -15%)},
+			#{color.adjust(#7638fa, $lightness: -15%, $saturation: -15%)}
+		),
+	$bold: white
+);
+
+@include root-linear(youtube, #321513, #210e0c, $bold: #f00, $icon: 44px);
+@include root-linear(discord, #1b1d31, #11121f, $bold: #5865f2);
+
+#mastodon {
+	@include badge(linear-gradient(#1c1036, #0b0920), $bold: transparent);
+	b {
+		background-image: linear-gradient(#9393ff 0 50%, #7a65d1 100%);
+		background-clip: text;
+	}
+}
+
+@include root-linear(twitter, #051f30, #031420, $bold: #1d9bf0);
+@include root-linear(bluesky, #00a5e4, #0076b1, $bold: #fff);
+@include root-linear(threads, #1b1b1b, #000, $bold: #fff);
+
+// Badge implementation
+.badges {
+	display: flex;
+	flex-flow: wrap;
+	flex-direction: row;
+	justify-content: center;
+	gap: 0.5em;
+	padding: 0;
+
+	li {
+		list-style-type: none;
+		block-size: fit-content;
+		margin: 0;
+	}
+}
+
+$border-radius: 8px;
+
+// I'm sure this is intended
+.badge {
+	font-family: 'Inter', Arial, FreeSans, sans-serif;
+	color: #eaeaea;
+
+	display: flex;
+	width: fit-content;
+	height: 56px;
+	border-radius: $border-radius;
+	background: var(--fill);
+	text-decoration: none;
+	text-align: left;
+
+	--icon: 40px;
+
+	> span {
+		transition: border-color var(--transition-time);
+		border-radius: $border-radius;
+		border: 2px solid #ffffff26;
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+		flex-direction: row;
+		gap: calc(28px - (var(--icon) / 2));
+
+		> span {
+			display: flex;
+			flex-direction: column;
+			line-height: 18px;
+			text-shadow: 0 0 5px #0000004f;
+			white-space: nowrap;
+			* {
+				margin: 0 !important;
+			}
+		}
+
+		// Fixes a rendering bug in Firefox where the
+		// shadow doesn't cross the div boundary.
+		//
+		// This essentially makes the image and sub-div forcefully
+		// grow the parent div rather than relying on padding to
+		// do so correctly.
+		> :first-child {
+			margin-left: calc(30px - (var(--icon) / 2));
+		}
+
+		> :last-child {
+			margin-right: 10px;
+		}
+
+		&:hover {
+			border-color: var(--overlay1);
+		}
+	}
+	img,
+	svg {
+		display: block;
+		block-size: var(--icon);
+		max-width: var(--icon);
+		border-radius: 8px;
+		filter: drop-shadow(0 0 5px #0000004f);
+		background: var(--icon-fill);
+	}
+	b {
+		color: var(--bold);
+	}
+
+	@media (max-width: 400px) {
+		> span {
+			> :first-child {
+				margin: calc(28px - (var(--icon) / 2));
+			}
+
+			> span {
+				display: none;
+			}
+		}
+	}
+}

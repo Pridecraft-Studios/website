@@ -1,78 +1,86 @@
+<!-- Copyright (c) 2023-2024 Pridecraft Studios & contributors
+	 SPDX-License-Identifier: CC-BY-SA-4.0
+	 https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 -->
 <script lang="ts">
 import Badge from '$lib/components/BadgeRaw.svelte';
 import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
+import DynPicture from '$lib/components/DynPicture.svelte';
+import YouTube from '$lib/components/YouTube.svelte';
 
-import social from '$lib/vars/social';
+import { Modrinth, CurseForge, GitHubDownloads, GitHubCommits } from '$lib/shields';
+import { Who, Socials, Donate, WwpMusic } from '$lib/boilerplate';
+
 </script>
 
 <!-- Cuties -->
 
 # PridePack
 
-> *For information about the new versioning system, see [here](https://github.com/Pridecraft-Studios/pridepack/blob/format17/VERSIONING.md).*
+<aside class="shields">
+<Modrinth modid="pridepack"/>
+<CurseForge modid="pride-pack" type="texture-packs" projectid="831872"/>
+<GitHubDownloads modid="pridepack" />
+<GitHubCommits modid="pridepack" />
+</aside>
 
-![Modrinth Downloads](https://img.shields.io/modrinth/dt/yPbBrzEX?logo=modrinth&label=Modrinth%20downloads&color=%231bd96a&style=for-the-badge) ![CurseForge Downloads](https://img.shields.io/curseforge/dt/831872?logo=curseforge&label=CurseForge%20Downloads&color=%23f16436&style=for-the-badge) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/pridecraft-studios/pridepack/total?style=for-the-badge&logo=github&label=Github%20Downloads) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/pridecraft-studios/pridepack?style=for-the-badge&logo=github) 
+This is PridePack, a Resource Pack made by [Pridecraft Studios].
+It comes with many LGBT Pride additions, such as paintings, beds, mobs and Main Menu changes.
 
-This is PridePack. A Resource Pack made by [Pridecraft Studios](https://git.pridecraft.gay/). We make Minecraft queer.
-<!-- We also have compatibility with some mods, such
-as [Paladin's Furniture Mod](https://modrinth.com/mod/paladins-furniture). -->
+<Donate/>
 
-## Who
+## Gallery
 
-We're [Pridecraft Studios](https://pridecraft.gay): A team that makes LGBT stuff to Minecraft. We're working
-on [PridePack](https://git.pridecraft.gay/PridePack), [PrideMod](https://git.pridecraft.gay/PrideMod), [MSPRIDE](https://git.pridecraft.gay/mspride) and many
-other [projects](https://git.pridecraft.gay/repositories).
-Support us my donating at
-[![ko-fi](https://raw.githubusercontent.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/donate/kofi-plural_vector.svg)](https://donate.pridecraft.gay)
+<p class="gallery prioritize-2">
 
-## How can I test new stuff out?
+<YouTube id="ZyazvpZAmGU" title="Pridepack Trailer on YouTube." />
 
-You can join our [Discord](https://discord.pridecraft.gay) and get early features sneak-peaks, or check out
-the [GitHub Releases](https://git.pridecraft.gay/PridePack)
+<Picture name="pridepack/banner" order="avif" original="avif"
+	alt="The Pride Pack banner, featuring a rainbow bed, a bii, an aroace axolotl, a sleeping fox,
+		chiseled bookshelves with rainbow-colored books, and a gay flag painting."
+/>
 
-## How can I contribute?
+<DynPicture name="bookshelves" fallback="jpeg" fallbackSize="3840x2160" original order="avif"
+	alt="Pride-themed chiseled bookshelves, candles and biis surrounding an enchanting table in a lush cave."
+/>
 
-You can help us translate Pridepack to more laguages
-on [Crowdin](https://crowdin.com/project/pridepack/settings) <a href="https://crowdin.com/project/pridepack" title="Crowdin"><img src="https://badges.crowdin.net/pridepack/localized.svg" alt="Crowdin"/></a>
-You can also indirectly contribute by voting on polls on [the Discord](https://discord.pridecraft.gay),
-or [our Mastodon](https://tech.lgbt/@pridecraft)
+<DynPicture name="aquarium" fallback="jpeg" fallbackSize="3840x2160" original order="avif"
+	alt="Trans, lesbian, progress and aroace themed axolotls in an aquarium,
+		featuring pride, lesbian and asexual flag paintings to the left."
+/>
 
-## Screenshots
+<DynPicture name="gallery" fallback="jpeg" fallbackSize="3840x2160" original order="avif"
+	alt="A gallery featuring the pansexual, progress, rainbow and bisexual pride flags, along with an ally flag."
+/>
 
-<Picture name="biis-pollinating-allium" alt="A few biis pollinating a flower with glow berries on the background" size="1920w" />
-<Picture name="biis-pollinating-azalea" alt="A group of biis, many of the baby variant, pollinating an Azalea Bush" size="1920w" />
-<Picture name="bii-jungle" alt="Bii bees in a jungle" size="1920w" />
-<Picture name="trans-allium" alt="Trans-coloured alliums scattered around" size="1920w" />
-<Picture name="pride-flag-paintings" alt="Six pride flag themed paitings on the walls of a Lush Cave" size="1920w" />
+<DynPicture name="foxes" fallback="jpeg" fallbackSize="3840x2160" original order="avif"
+	alt="Two foxes in front of a fire place,
+		one of which is sleeping while the other is wearing pink &amp; white striped thigh-high socks."
+/>
 
-## Where else is this available?
+<DynPicture name="bedroom" fallback="jpeg" fallbackSize="3840x2160" original order="avif"
+	alt="A bedroom featuring pride-themed candles and bed, with a sniffer peeking in."
+/>
 
-<div class="badges">
-<a href="https://modrinth.com/resourcepack/pridepack" title="Available on Modrinth"><img src="https://raw.githubusercontent.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/available/modrinth_vector.svg" alt="Available on Modrinth"/></a>
+</p>
 
-<a href="https://www.curseforge.com/minecraft/texture-packs/pride-pack" title="Available on CurseForge"><img src="https://raw.githubusercontent.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/available/curseforge_vector.svg" alt="Available on CurseForge"/></a>
+<Who/>
 
-<a href="https://github.com/Pridecraft-Studios/pridepack" title="Available on GitHub"><img src="https://raw.githubusercontent.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/available/github_vector.svg" alt="Available on GitHub"/></a>
+## Where can I download PridePack?
 
-<a href="https://tlmods.org/en/resourcepacks/pride-pack/" title="Stolen by TLMods, not that you should download from here."><img src="https://raw.githubusercontent.com/blryface/blurrybadges/88c6971e38f189d9dc9393c8a4933974559c3c1d/badges/svg/Stolen%20By%20TLMods.svg" alt="Stolen by TLMods"/></a>
+<ul class="badges">
+<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridepack" ext="svg" head="Available on" name="Modrinth"/></li>
+<li><Badge id="curseforge" rel="me" link="https://www.curseforge.com/minecraft/texture-packs/pride-pack" ext="svg" head="Available on" name="CurseForge"/></li>
+<li><Badge id="github" rel="me" link="https://github.com/Pridecraft-Studios/pridepack" ext="svg" head="Available on" name="GitHub"/></li>
+</ul>
 
-<a href="https://www.planetminecraft.com/texture-pack/pridepack-5-0-a-pride-resource-pack-for-minecraft/" title="Available on PlanetMinecraft"><img src="https://github.com/blryface/blurrybadges/blob/main/badges/1Xpng/Avaliable%20On%20PMC@1x.png?raw=true" alt="Available on PlanetMinecraft"/></a>
+<small>
 
-<Badge id="nineminecraft" rel="me" link="https://www.9minecraft.net/pride-resource-pack/" name="9Minecraft" head="Stolen by" title="Stolen by 9Minecraft, not that you should download from here."/>
-</div>
+Pridepack by Pridecraft Studios is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
-## Socials
+<WwpMusic />
+</small>
 
-<div class="badges">
-{#each Object.entries(social) as [key, value]}
-<a rel="me" href="{value.link}" title="{value.alt}">
-    {#if value.icon}
-        <img src="{value.icon}" alt="{value.alt}"/>
-    {:else}
-        {value.alt}
-    {/if}
-</a>
-{/each}
-</div>
+<Socials/>
 
+[Pridecraft Studios]: /

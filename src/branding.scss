@@ -1,23 +1,133 @@
-#canvas {
-	--fill: linear-gradient(#AE7629, #895120);
-	b { color: #F2E757; }
+/* Copyright (c) 2023-2024 Pridecraft Studios & contributors
+ * All Rights Reserved */
+
+@use 'sass:color';
+
+@mixin hex($a: null, $b: null, $c: null, $d: null, $e: null, $f: null) {
+	@if $a {
+		--a: #{$a};
+	}
+	@if $b {
+		--b: #{$b};
+	}
+	@if $c {
+		--c: #{$c};
+	}
+	@if $d {
+		--d: #{$d};
+	}
+	@if $e {
+		--e: #{$e};
+	}
+	@if $f {
+		--f: #{$f};
+	}
 }
-#iris { --fill: linear-gradient(#29537A, #3D572C); }
-#optifabric {
-	--icon-fill: #5683FF;
-	--fill: linear-gradient(#0030A1, #001850);
+
+@mixin quad($a: null, $b: null, $c: null, $d: null) {
+	@if $a {
+		--a: #{$a};
+	}
+	@if $b {
+		--b: #{$b};
+	}
+	@if $c {
+		--c: #{$c};
+	}
+	@if $d {
+		--d: #{$d};
+	}
 }
-#optifine {
-	--fill: linear-gradient(#952E2F, #471010);
-	b { color: #FAB325; }
+
+@mixin tri($a: null, $b: null, $c: null) {
+	@if $a {
+		--a: #{$a};
+	}
+	@if $b {
+		--b: #{$b};
+	}
+	@if $c {
+		--c: #{$c};
+	}
 }
-#pfm { --fill: linear-gradient(#F77F34, #9F4204); }
-#sodium { --fill: linear-gradient(#7DB26F, #387329); }
-#vulkanmod {
-	--fill: linear-gradient(#121321, #20212C);
-	b { color: #A74141; }
+
+.rosette {
+	visibility: visible;
 }
-#nineminecraft {
-	--fill: linear-gradient(#814428, #482413);
-	img { height: 48px; }
+
+svg.rainbow,
+svg.gay {
+	// hex
+	--g: var(--a);
+	--h: var(--b);
+	--i: var(--c);
+	--j: var(--d);
+	--k: var(--e);
+	--l: var(--f);
+}
+
+svg.lesbian {
+	// quad
+	--e: var(--a);
+	--i: var(--a);
+	--f: var(--b);
+	--j: var(--b);
+	--g: var(--c);
+	--k: var(--c);
+	--h: var(--d);
+	--l: var(--d);
+}
+
+svg.trans,
+svg.bi {
+	// tri
+	--d: var(--a);
+	--g: var(--a);
+	--j: var(--a);
+	--e: var(--b);
+	--h: var(--b);
+	--k: var(--b);
+	--f: var(--c);
+	--i: var(--c);
+	--l: var(--c);
+}
+
+svg.no-bg {
+	--bg: transparent;
+}
+
+svg.rainbow {
+	@include hex($a: #a528a4, $b: #cd3834, $c: #ff890a, $d: #f4ce47, $e: #8dda86, $f: #4371be);
+}
+
+svg.trans {
+	@include tri($a: #f5a9b8, $b: #5bcefa, $c: #f3f3f3);
+}
+
+svg.bi {
+	@include tri($a: #0038a8, $b: #9b4f96, $c: #d60270);
+}
+
+svg.gay {
+	@include hex($a: #3e1a78, $b: #5049cb, $c: #7bade3, $d: #99e8c2, $e: #26ceaa, $f: #078d70);
+}
+
+svg.lesbian {
+	@include quad(#d362a4, #a30262, #ff9a56, #d52d00);
+}
+
+svg.pridegui {
+	--a: #3e1a78;
+	--b: #5049cb;
+	--c: #7bade3;
+	--d: #99e8c2;
+	--e: #26ceaa;
+	--f: #078d70;
+
+	--l: #a30262;
+	--k: #d362a4;
+	--j: #{color.change(#d362a4, $lightness: 80%, $chroma: 20%, $space: oklch)};
+	--i: #{color.change(#ff9a56, $lightness: 80%, $chroma: 20%, $space: oklch)};
+	--h: #ff9a56;
+	--g: #d52d00;
 }

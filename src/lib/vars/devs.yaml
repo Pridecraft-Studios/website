@@ -1,0 +1,206 @@
+# Developer information
+# Sorted alphabetically, largely
+
+Ampflower:
+  avatar: https://avatars.githubusercontent.com/u/8528256?s=96&v=4
+  bio: |
+    Local chaos lesbian software engineer that's not beating the furry allegations.
+    <i>literally is wearing a collar</i>
+  roles:
+    - sysadmin
+    - web designer
+    - texture artist
+    - software engineer
+  projects:
+    - pridepack
+    - website
+  socials:
+    website: https://ampflower.gay
+    github: https://github.com/Ampflower
+    fediverse: https://blobfox.coffee/@Ampflower
+
+amy:
+  avatar: https://dp.nea.moe/avatar/712639419785412668.png
+  bio: hello! my name is amy but you can call me &lt;script&gt;alert(1)&lt;/script&gt;
+  roles:
+    - texture artist
+  projects:
+    - pridepack
+  socials:
+    website: https://exhq.dev
+    github: https://gh.exhq.dev
+    fediverse: https://woem.men/@echo
+
+Blurryface:
+  avatar: https://avatars.githubusercontent.com/u/124838505?s=96&v=4
+  bio: |
+    Just some Billingual Brazilian Gay Guy that gays minecraft,
+    has ADHD, anxiety and depression :3 (send hlep)
+  # :brainbow:
+  roles:
+    - manager
+    - maintainer
+    - texture artist
+    - software engineer
+  projects:
+    - pridepack
+    - pridebones
+    - pridegui
+    - joy
+    - website
+  socials:
+    website: https://blurry.gay
+    github: https://github.com/blryface
+    fediverse: https://tech.lgbt/@blurryface
+
+Fery:
+  avatar: https://avatars.githubusercontent.com/u/132052650?s=96&v=4
+  roles:
+    - texture artist
+  projects:
+    - pridepack
+    - pridegui
+  socials:
+    website: https://normalfery.github.io
+    github: https://github.com/NormalFery
+    bluesky: https://bsky.app/profile/normalfery.bsky.social
+
+KTrain:
+  avatar: https://avatars.githubusercontent.com/u/69028025?s=96&v=4
+  bio: |
+    train of chaos and mental disabilities
+  roles:
+    - software engineer
+  socials:
+    website: https://ktrain5369.me/
+    github: https://github.com/KTrain5169
+    bluesky: https://bsky.app/profile/ktrain5369.me
+
+Laxla:
+  avatar: https://avatars.githubusercontent.com/u/127752744?s=96&v=4
+  roles:
+    - texture artist
+  projects:
+    - pridepack
+  socials:
+    website: https://laxla.quest
+    github: https://github.com/Laxystem
+    fediverse: https://tech.lgbt/@laxla
+
+Lupancham:
+  avatar: https://avatars.githubusercontent.com/u/77426370?s=96&v=4
+  roles:
+    - texture artist
+  socials:
+    website: https://lupancham.net/
+    github: https://github.com/lupancham
+
+polycord:
+  avatar: https://avatars.githubusercontent.com/u/64599907?s=96&v=4
+  roles:
+    - texture artist
+  socials:
+    github: https://github.com/polycord
+
+rotgruengelb:
+  avatar: https://avatars.githubusercontent.com/u/75038404?s=96&v=4
+  roles:
+    - texture artist
+  projects:
+    - pridetooltips
+  socials:
+    website: https://rotgruengelb.net
+    github: https://github.com/rotgruengelb
+    youtube: https://www.youtube.com/channel/UCIcW3EQiG8ejtLQaifzZUJg
+
+Sake:
+  avatar: https://avatars.githubusercontent.com/u/117884763?s=96&v=4
+  roles:
+    - manager
+    - maintainer
+    - branding
+    - texture artist
+  projects:
+    - pridepack
+    - pridebones
+  socials:
+    website: https://pridecraft.gay/frog
+    github: https://github.com/sakecode
+
+SympathyTea:
+  avatar: https://avatars.githubusercontent.com/u/116274772?s=96&v=4
+  roles:
+    - texture artist
+  projects:
+    - pridebones
+  socials:
+    website: https://sympathytea.neocities.org/
+    github: https://github.com/SympathyTea
+    fediverse: https://cooltrans.men/SympathyTea
+
+Skye:
+  avatar: https://avatars.githubusercontent.com/u/116078858?s=96&v=4
+  bio: |
+    uhhhh yeah I'll do that later
+  roles:
+    - sysadmin
+    - web designer
+  projects:
+    - website
+  socials:
+    website: https://skye.vg
+    github: https://github.com/vgskye
+    fediverse: https://is-quite.gay/@skye
+
+Thinkseal:
+  avatar: https://avatars.githubusercontent.com/u/132022649?s=96&v=4
+  bio: |
+    hi I play minecraft and code sometimes.
+    um what else should I say here meh I will add it later
+  roles:
+    - quality assurance
+  projects:
+    - pridepack
+    - pridebones
+  socials:
+    website: https://thinkseal.github.io/
+    github: https://github.com/Thinkseal
+
+TheClashFruit:
+  avatar: https://avatars.githubusercontent.com/u/55049569?s=96&v=4
+  roles:
+    - software engineer
+  projects:
+    - joy
+  socials:
+    website: http://theclashfruit.me/
+    github: https://github.com/TheClashFruit
+    fediverse: https://wetdry.world/@TheClashFruit
+
+Wolren:
+  avatar: https://avatars.githubusercontent.com/u/86470291?s=96&v=4
+  roles:
+    - software engineer
+  projects:
+    - joy
+  socials:
+    github: https://github.com/Wolren
+
+WorldWidePixel:
+  avatar: https://avatars.githubusercontent.com/u/58098422?s=96&v=4
+  bio: |
+    Makes stuff on the internet.
+    That's all you need to know.
+  roles:
+    - manager
+    - web designer
+    - texture artist
+    - music artist
+  projects:
+    - pridepack
+    - joy
+    - website
+  socials:
+    website: https://worldwidepixel.ca
+    github: https://github.com/worldwidepixel
+    bluesky: https://bsky.app/profile/worldwidepixel.ca
