@@ -116,7 +116,6 @@ $border-radius: 8px;
 	color: #eaeaea;
 
 	display: flex;
-	flex-grow: 1;
 	width: fit-content;
 	height: 56px;
 	border-radius: $border-radius;
@@ -132,6 +131,7 @@ $border-radius: 8px;
 		border: 2px solid #ffffff26;
 		display: flex;
 		align-items: center;
+		flex-grow: 1;
 		flex-direction: row;
 		gap: calc(28px - (var(--icon) / 2));
 
