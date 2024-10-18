@@ -115,7 +115,8 @@ $border-radius: 8px;
 	font-family: 'Inter', Arial, FreeSans, sans-serif;
 	color: #eaeaea;
 
-	display: block;
+	display: flex;
+	flex-grow: 1;
 	width: fit-content;
 	height: 56px;
 	border-radius: $border-radius;
@@ -129,8 +130,6 @@ $border-radius: 8px;
 		transition: border-color var(--transition-time);
 		border-radius: $border-radius;
 		border: 2px solid #ffffff26;
-		width: calc(100% - 4px);
-		height: calc(100% - 4px);
 		display: flex;
 		align-items: center;
 		flex-direction: row;
