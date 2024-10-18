@@ -1,0 +1,24 @@
+root = true
+
+[*]
+indent_style = tab
+insert_final_newline = true
+
+[*.json]
+indent_size = 2
+ij_json_keep_trailing_comma = false
+ij_json_space_after_comma = false
+# Keeps IntelliJ from emitting nonsensical reformats that can't actually work. 
+ij_json_wrap_long_lines = false
+
+[{*.svelte,*.md,*.html}]
+# Enforces IntelliJ to not fight Prettier when reformatting
+ij_html_space_inside_empty_tag = true
+ij_html_keep_whitespaces_inside = true
+ij_html_keep_whitespaces = true
+ij_html_add_new_line_before_tags = false
+ij_html_keep_blank_lines = 1
+ij_html_do_not_indent_children_of_tags = none
+# Annoyingly, this is ignored in 2022.2.2. Maybe you have better luck.
+ij_html_align_attributes = false
+ij_xml_align_attributes = false

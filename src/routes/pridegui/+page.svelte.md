@@ -1,44 +1,74 @@
+<!-- Copyright (c) 2023-2024 Pridecraft Studios & contributors
+	 SPDX-License-Identifier: CC-BY-SA-4.0
+	 https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 -->
 <script lang="ts">
 import Badge from '$lib/components/BadgeRaw.svelte';
 import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
 
-import social from '$lib/vars/social';
+import { Modrinth, GitHubDownloads, GitHubCommits } from '$lib/shields';
+import { Who, Socials, Donate, Rosette } from '$lib/boilerplate';
 </script>
 
 <!-- Clyde had this so I'm adding it too -->
 <!-- ^ what does this meannnn -->
+
 # PrideGUI
 
-![Modrinth Downloads](https://img.shields.io/modrinth/dt/6mcKx2Pb?logo=modrinth&label=Modrinth%20downloads&color=%231bd96a&style=for-the-badge) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/pridecraft-studios/pridegui/total?style=for-the-badge&logo=github&label=Github%20Downloads) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/pridecraft-studios/pridegui?style=for-the-badge&logo=github) 
+<aside class="shields">
+<Modrinth modid="pridegui"/>
+<GitHubDownloads modid="pridegui" />
+<GitHubCommits modid="pridegui" />
+</aside>
 
-This, is PrideGUI. An official addon to [PridePack](https://modrinth.com/resourcepack/pridepack) that changes the Minecraft GUI to be LGBT Themed. You can use it as a standalone pack or an addon to Pridepack.
-It comes in a single, Dark version.
-
-It's first release is 18.0.0, due to the Pridepack Versioning System.
+This is an official addon to [PridePack](/pridepack) that changes the Minecraft GUI to have a dark theme,
+with LGBT details.
+It is available for many versions, starting from Beta 1.7.3.
+You can get [PrideGUI Legacy here](https://modrinth.com/project/pridegui-legacy),
+which has versions of the pack for Beta 1.7.3 all the way through 1.20.1.
 
 ![PrideGUI banner](https://cdn.modrinth.com/data/6mcKx2Pb/images/05250c177741152dca8e964ea47a3806d23d4432.png)
-## Who?
 
-We are [Pridecraft Studios](https://pridecraft.gay), A team that makes LGBT content for Minecraft. We're working on [PridePack](https://git.pridecraft.gay/PridePack), [PrideMod](https://git.pridecraft.gay/PrideMod), and a few other [projects](https://git.pridecraft.gay/repositories).
+<Donate/>
 
-## How can I test new stuff out?
+<Who/>
 
-Currently, the best way to test stuff out is to join [our Discord](https://discord.pridecraft.gay) or follow [our Mastodon](https://tech.lgbt/@pridecraft) or [our BlueSky](https://bsky.app/profile/pridecraft.gay) to see sneak-peaks of new features. 
+## Where can I download PrideGUI?
 
-## How can I contribute?
-You can help us translate Pridepack to more languages on [Crowdin](https://translate.pridecraft.gay) [![Crowdin](https://badges.crowdin.net/pridepack/localized.svg)](https://crowdin.com/project/pridepack).
-You can also indirectly contribute by voting on polls on [the Discord](https://discord.pridecraft.gay), or [our Mastodon](https://tech.lgbt/@pridecraft)
+<ul class="varied">
+<li>
+	<h3><Rosette type="gay no-bg">Dark Mode</Rosette></h3>
+	<ul class="badges">
+	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui" ext="svg" head="Available on" name="Modrinth"/></li>
+	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui" ext="svg" head="Available on" name="GitHub"/></li>
+	</ul>
+</li>
+<li>
+	<h3><Rosette type="gay no-bg">Dark Mode - Legacy</Rosette></h3>
+	<ul class="badges">
+	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui-legacy" ext="svg" head="Available on" name="Modrinth"/></li>
+	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui/branches/all?query=legacy" ext="svg" head="Available on" name="GitHub"/></li>
+	</ul>
+</li>
+<li>
+	<h3><Rosette type="lesbian no-bg">Light Mode</Rosette></h3>
+	<ul class="badges">
+	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui-light" ext="svg" head="Available on" name="Modrinth"/></li>
+	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui/tree/light/main" ext="svg" head="Available on" name="GitHub"/></li>
+	</ul>
+</li>
+<li>
+	<h3><Rosette type="lesbian no-bg">Light Mode - Legacy</Rosette></h3>
+	<ul class="badges">
+	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui-light-legacy" ext="svg" head="Available on" name="Modrinth"/></li>
+	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui/branches/all?query=light%2Flegacy" ext="svg" head="Available on" name="GitHub"/></li>
+	</ul>
+</li>
+</ul>
 
-## What mods are currently supported?
-Currently, there is no support planned for PrideGUI just yet, but mod support may be added in the future, after the initial project is finished.
+<small>
 
+PrideGUI by Pridecraft Studios is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+</small>
 
-## Where is this avaliable?
-
-<div class="badges">
-<a href="https://modrinth.com/resourcepack/pridegui" title="Available on Modrinth"><img src="https://raw.githubusercontent.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/available/modrinth_vector.svg" alt="Available on Modrinth"/></a>
-
-<a href="https://github.com/Pridecraft-Studios/pridegui" title="Available on GitHub"><img src="https://raw.githubusercontent.com/intergrav/devins-badges/1aec26abb75544baec37249f42008b2fcc0e731f/assets/cozy/available/github_vector.svg" alt="Available on GitHub"/></a>
-
-</div>
+<Socials/>

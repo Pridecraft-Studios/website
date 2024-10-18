@@ -1,12 +1,39 @@
-.DS_Store
 node_modules
-/build
-/.idea
+
+# IDE
+.idea
+
+# Temporary messes in the tree
+/static/banners/**/*.png
+/static/gallery/**/*.png
+tmp
+*.log
+*.ico
+!favicon.ico
+
+# Mandate `.jpeg` extension
+*.jpg
+
+# Not really necessary
+package-lock.json
+yarn.lock
+
+# Output
+.output
+.vercel
 /.svelte-kit
-/package
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
 .env
 .env.*
 !.env.example
+!.env.test
+
+# Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-package-lock.json
