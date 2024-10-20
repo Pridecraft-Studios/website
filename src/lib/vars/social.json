@@ -17,22 +17,10 @@
 		"link": "https://youtube.com/@PridecraftStudios",
 		"ext": "svg"
 	},
-	"twitter": {
-		"head": "Chat with us on",
-		"name": "Twitter",
-		"link": "https://twitter.com/pridecraftreal",
-		"ext": "svg"
-	},
 	"bluesky": {
 		"head": "Chat with us on",
 		"name": "Bluesky",
 		"link": "https://bsky.app/profile/pridecraft.gay",
-		"ext": "svg"
-	},
-	"threads": {
-		"head": "Chat with us on",
-		"name": "Threads",
-		"link": "https://threads.net/@pridecraftstudios",
 		"ext": "svg"
 	},
 	"instagram": {
