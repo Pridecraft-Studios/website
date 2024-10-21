@@ -89,11 +89,14 @@ Laxla:
 
 Lupancham:
   avatar: https://avatars.githubusercontent.com/u/77426370?s=96&v=4
+  bio: |
+    /System/Applications/Lupancham.app /Contents/MacOS/F#ckinWork
   roles:
     - texture artist
   socials:
     website: https://lupancham.net/
     github: https://github.com/lupancham
+    bluesky: https://bsky.app/profile/lupancham.net
 
 polycord:
   avatar: https://avatars.githubusercontent.com/u/64599907?s=96&v=4
