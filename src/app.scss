@@ -126,6 +126,7 @@ footer {
 		transition:
 			opacity var(--transition-time),
 			visibility var(--transition-time);
+
 		opacity: 0;
 		visibility: hidden;
 		position: absolute;
@@ -167,6 +168,11 @@ footer {
 		opacity: 1;
 		visibility: visible;
 	}
+}
+
+.rosette {
+	pointer-events: none;
+	display: block;
 }
 
 .logo,

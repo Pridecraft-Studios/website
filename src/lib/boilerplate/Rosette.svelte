@@ -7,7 +7,7 @@
 	// GudF helped optimise the logo itself further :3c
 </script>
 
-<svg width="48" height="48" class="rosette {type}" aria-labelledby={id} hidden>
+<svg width="48" height="48" class="rosette {type}" aria-labelledby={id} display="none">
 	<use href="/logo.svg#a" />
 </svg>
 <span {id}><slot /></span>
