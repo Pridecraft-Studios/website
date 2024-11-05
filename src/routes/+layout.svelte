@@ -10,7 +10,6 @@
 
 <svelte:head>
 	<title>Pridecraft Studios</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="theme-color" content="#62A930" />
 	<meta name="description" content="Minecraft Gay Real" />
 	<meta name="color-scheme" content="light dark" />
