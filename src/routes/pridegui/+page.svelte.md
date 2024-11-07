@@ -23,9 +23,9 @@ import { Who, Socials, Donate, Rosette } from '$lib/boilerplate';
 
 This is an official addon to [PridePack](/pridepack) that changes the Minecraft GUI to have a dark theme,
 with LGBT details.
-It is available for many versions, starting from Beta 1.7.3.
+It is available for many versions, starting from Beta 1.0.
 You can get [PrideGUI Legacy here](https://modrinth.com/project/pridegui-legacy),
-which has versions of the pack for Beta 1.7.3 all the way through 1.20.1.
+which has versions of the pack for Beta 1.0 all the way through 1.20.1.
 
 ![PrideGUI banner](https://cdn.modrinth.com/data/6mcKx2Pb/images/05250c177741152dca8e964ea47a3806d23d4432.png)
 
@@ -60,7 +60,7 @@ which has versions of the pack for Beta 1.7.3 all the way through 1.20.1.
 <li>
 	<h3><Rosette type="lesbian no-bg">Light Mode - Legacy</Rosette></h3>
 	<ul class="badges">
-	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui-light-legacy" ext="svg" head="Available on" name="Modrinth"/></li>
+	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui-legacy-light" ext="svg" head="Available on" name="Modrinth"/></li>
 	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui/branches/all?query=light%2Flegacy" ext="svg" head="Available on" name="GitHub"/></li>
 	</ul>
 </li>
