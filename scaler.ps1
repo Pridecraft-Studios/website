@@ -133,7 +133,7 @@ foreach ($arg in $argRem) {
 	}
 	$output = $null -ne $paths[1] ? $paths[1] : [IO.Path]::GetFileNameWithoutExtension($image);
 
-	if (!($argMap["force"]) -and ($sizes | % { !(Get-Item "$output-${size}p.png" 2> $null) })) {
+	if (!($argMap["force"]) -and !($sizes | % { !(Get-Item "$output-${_}p.png") 2> $null } | ? { $_ -eq $true })) {
 		Write-Warning "Skipping $output for $image";
 		continue;
 	}
