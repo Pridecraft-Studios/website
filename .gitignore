@@ -11,6 +11,9 @@ tmp
 *.ico
 !favicon.ico
 
+# We aren't using specifically sized JPEGs.
+*-*[0-9]p.jpe?g
+
 # Mandate `.jpeg` extension
 *.jpg
 
