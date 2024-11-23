@@ -25,7 +25,7 @@ import { Who, Socials, Donate, WwpMusic } from '$lib/boilerplate';
 </aside>
 
 This is PridePack, a Resource Pack made by [Pridecraft Studios].
-It comes with many LGBT Pride additions, such as paintings, beds, mobs and Main Menu changes.
+It comes with many LGBTQ+ Pride additions, including paintings, beds, mobs, candles and more!
 
 <Donate/>
 

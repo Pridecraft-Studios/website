@@ -24,7 +24,7 @@ import { Who, Socials, Donate, WwpMusic } from '$lib/boilerplate';
 </aside>
 
 This is Pride Bones, a version of Pridepack by [Pridecraft Studios] in the style of [Bare Bones].
-It comes with many LGBT Pride additions, such as paintings, beds, mobs and main menu changes.
+It comes with many LGBTQ+ Pride additions, including paintings, beds, mobs, candles and more!
 
 <Donate />
 
