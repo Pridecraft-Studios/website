@@ -77,12 +77,17 @@ It comes with many LGBTQ+ Pride additions, including paintings, beds, mobs, cand
 <small>
 
 Prideful by Pridecraft Studios is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/),
-subject to limitations of the [Faithful License](https://git.pridecraft.gay/prideful/blob/main/FAITHFUL-LICENSE).
+subject to limitations of [The Faithful License].
 
 <WwpMusic />
+
+[Faithful] is licensed under [The Faithful License].
+
 </small>
 
 <Socials/>
 
 [Pridecraft Studios]: /
+[Faithful]: https://faithfulpack.net/
 [Faithful 32x]: https://faithfulpack.net/downloads#Faithful%2032x
+[The Faithful License]: https://faithfulpack.net/license
