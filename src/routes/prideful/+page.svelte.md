@@ -35,7 +35,7 @@ It comes with many LGBTQ+ Pride additions, including paintings, beds, mobs, cand
 
 <YouTube id="ZyazvpZAmGU" title="Pridepack Trailer on YouTube." />
 
-<Picture name="pridepack/banner" order="avif" original="avif"
+<Picture name="prideful/banner" order="avif" original="avif"
 	alt="The Prideful banner, featuring a rainbow bed, a bii, an aroace axolotl, a sleeping fox,
 		chiseled bookshelves with rainbow-colored books, and a gay flag painting."
 />
