@@ -66,7 +66,8 @@ svg.gay {
 	--l: var(--f);
 }
 
-svg.lesbian {
+svg.lesbian,
+svg.enby {
 	// quad
 	--e: var(--a);
 	--i: var(--a);
@@ -114,6 +115,10 @@ svg.gay {
 
 svg.lesbian {
 	@include quad(#d362a4, #a30262, #ff9a56, #d52d00);
+}
+
+svg.enby {
+	@include quad(#191919, #9b59d0, #f3f3f3, #fff433);
 }
 
 svg.pridegui {

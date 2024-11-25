@@ -38,7 +38,7 @@
 				<!--Link id="joy">Joy</Link-->
 				<!--Link id="mspride">MSPRIDE</Link-->
 				<Link id="pridebones" type="trans no-bg">Pride Bones</Link>
-				<!--Link id="faithfulpride">Faithful Pride</Link-->
+				<Link id="prideful" type="enby no-bg">Prideful</Link>
 			</ul>
 		</Popup>
 	</nav>
