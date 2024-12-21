@@ -56,15 +56,18 @@ Blurryface:
 
 Fery:
   avatar: https://avatars.githubusercontent.com/u/132052650?s=96&v=4
+  bio: |
+    Homosexual audacity, in a spanish vessel "How hard can Minecraft mod developing really be?" 
+    (Spoiler alert: very.)
   roles:
     - texture artist
   projects:
     - pridepack
     - pridegui
   socials:
-    website: https://normalfery.github.io
+    website: https://normalfery.es
     github: https://github.com/NormalFery
-    bluesky: https://bsky.app/profile/normalfery.bsky.social
+    bluesky: https://bsky.app/profile/normalfery.es
 
 KTrain:
   avatar: https://avatars.githubusercontent.com/u/69028025?s=96&v=4
