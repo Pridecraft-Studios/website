@@ -29,8 +29,8 @@ amy:
     - pridepack
   socials:
     website: https://exhq.dev
-    github: https://gh.exhq.dev
-    fediverse: https://woem.men/@echo
+    github: https://github.com/exhq
+    fediverse: https://lunar.place/@amy
 
 Blurryface:
   avatar: https://avatars.githubusercontent.com/u/124838505?s=96&v=4
