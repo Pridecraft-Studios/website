@@ -101,6 +101,39 @@ footer {
 	}
 }
 
+details {
+	background-color: var(--crust);
+
+	border-radius: 1rem;
+
+	margin: 1em 0;
+
+	&[open] {
+		padding-bottom: 1em;
+
+		> summary {
+			border-radius: 1rem 1rem 0 0;
+		}
+	}
+
+	> :not(summary) {
+		margin: 1em 1em;
+		margin-block-end: unset;
+	}
+}
+
+summary {
+	background-color: var(--surface1);
+
+	border-radius: 1rem;
+	font-size: 1.1em;
+
+	padding: 0.5em 0.5em 0.5em 1em;
+
+	user-select: none;
+	cursor: pointer;
+}
+
 .popup {
 	position: relative;
 	display: inline-block;
