@@ -80,7 +80,8 @@ svg.enby {
 }
 
 svg.trans,
-svg.bi {
+svg.bi,
+svg.pan {
 	// tri
 	--d: var(--a);
 	--g: var(--a);
@@ -115,6 +116,10 @@ svg.gay {
 
 svg.lesbian {
 	@include quad(#d362a4, #a30262, #ff9a56, #d52d00);
+}
+
+svg.pan {
+	@include tri(#21b1ff, #ffd800, #ff218c);
 }
 
 svg.enby {
