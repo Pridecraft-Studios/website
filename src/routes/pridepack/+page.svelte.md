@@ -15,7 +15,7 @@ import { Who, Socials, Donate, WwpMusic } from '$lib/boilerplate';
 
 <!-- Cuties -->
 
-# PridePack
+# Pridepack
 
 <aside class="shields">
 <Modrinth modid="pridepack"/>
@@ -24,7 +24,7 @@ import { Who, Socials, Donate, WwpMusic } from '$lib/boilerplate';
 <GitHubCommits modid="pridepack" />
 </aside>
 
-This is PridePack, a Resource Pack made by [Pridecraft Studios].
+This is Pridepack, a Resource Pack made by [Pridecraft Studios].
 It comes with many LGBTQ+ Pride additions, including paintings, beds, mobs, candles and more!
 
 <Donate/>
@@ -66,7 +66,7 @@ It comes with many LGBTQ+ Pride additions, including paintings, beds, mobs, cand
 
 <Who/>
 
-## Where can I download PridePack?
+## Where can I download Pridepack?
 
 <ul class="badges">
 <li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridepack" ext="svg" head="Available on" name="Modrinth"/></li>

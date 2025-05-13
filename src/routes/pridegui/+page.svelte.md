@@ -21,7 +21,7 @@ import { Who, Socials, Donate, Rosette } from '$lib/boilerplate';
 <GitHubCommits modid="pridegui" />
 </aside>
 
-PrideGUI is an official addon to [PridePack](/pridepack) that changes the Minecraft GUI
+PrideGUI is an official addon to [Pride Pack](/pridepack) that changes the Minecraft GUI
 to add LGBTQ+ details and introduce dark and light themes!
 You can additionally get [PrideGUI Legacy here](https://modrinth.com/project/pridegui-legacy),
 which has versions of the pack for Alpha 1.2.2 all the way through 1.20.1.

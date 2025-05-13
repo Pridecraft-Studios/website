@@ -44,14 +44,14 @@ It has a variant for every Minecraft version, starting from Minecraft Beta 1.7.3
 
 ### Joy
 
-[Joy](https://git.pridecraft.gay/joy) is an upcoming mod adding pride content,
+[Joy](joy) is an upcoming mod adding pride content,
 including all content from Pridepack, to Minecraft.
 It will even feature its own OST!
 Joy is really early in development, and is still in planning phase.
 
-### PrideBones
+### Pride Bones
 
-[PrideBones](pridebones) is a version of Pridepack based on Bare Bones' style,
+[Pride Bones](pridebones) is a version of Pridepack based on Bare Bones' style,
 which has a more simplistic look to it, similar to the Minecraft Trailers art style.
 
 <Picture name="pridebones/banner" order="avif" original="avif"
