@@ -74,7 +74,7 @@ a {
 		color: var(--link-visited);
 	}
 
-	&:hover {
+	&:hover:not(.badge) {
 		color: var(--link-hover);
 	}
 }

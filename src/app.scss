@@ -215,10 +215,17 @@ a.logo {
 	flex-direction: row;
 	align-items: center;
 
-	gap: 0.4rem;
-	padding: 0 0.4rem 0 0;
+	gap: 1rem;
+	padding: 0 0.25rem 0 0.25rem;
 
-	border-radius: 1.3em $border-radius $border-radius 1.3em;
+	color: var(--text);
+
+	border-radius: $border-radius $border-radius $border-radius $border-radius;
+
+	> img {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
 
 	> svg {
 		transition: rotate var(--rotate-time);

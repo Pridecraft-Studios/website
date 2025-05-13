@@ -55,7 +55,7 @@
 	</p>
 	<p>
 		Website designed by <a href="https://ampflower.gay">Ampflower</a> and
-		<a href="https://skye.vg/">skyevg</a>.
+		<a href="https://skye.vg/">skyevg</a>, plus a couple others.
 	</p>
 	<p>
 		Not an official Minecraft product. Not associated, approved, or endorsed by Mojang Studios or
