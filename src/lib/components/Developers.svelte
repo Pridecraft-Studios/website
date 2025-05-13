@@ -1,4 +1,12 @@
 <script lang="ts">
+	// audit: The use of {@html} is from trusted build data; the risk of an exploit requires
+	// pushing to the repository itself, which is, generally, not possible, and would be higher impact than
+	// this alone would ever be.
+
+	// If this ever changes, ensure that the provided HTML is purified before hitting the end DOM.
+
+	/* eslint svelte/no-at-html-tags: "off" */
+
 	import { page } from '$app/stores';
 
 	import devMap from '$lib/vars/devs.yaml';
