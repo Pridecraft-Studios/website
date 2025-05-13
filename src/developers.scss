@@ -86,7 +86,8 @@ $border-radius: 8px;
 			flex-flow: column wrap;
 		}
 
-		.roles, .links {
+		.roles,
+		.links {
 			grid-area: roles;
 		}
 
@@ -119,7 +120,11 @@ $border-radius: 8px;
 		display: block;
 	}
 
-	.bio, .roles, > li > span > .links { display: none; }
+	.bio,
+	.roles,
+	> li > span > .links {
+		display: none;
+	}
 }
 
 @mixin -dev($name, $light, $dark, $direction: null) {

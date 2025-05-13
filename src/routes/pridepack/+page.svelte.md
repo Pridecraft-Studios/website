@@ -88,5 +88,4 @@ Pridepack by Pridecraft Studios is licensed under [CC BY-SA 4.0](https://creativ
 
 <Developers type="small"/>
 
-
 [Pridecraft Studios]: /

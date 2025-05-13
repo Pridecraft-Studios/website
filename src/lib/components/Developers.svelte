@@ -1,53 +1,63 @@
 <script lang="ts">
-import { page } from '$app/stores';
+	import { page } from '$app/stores';
 
-import devMap from '$lib/vars/devs.yaml';
-import SocialsMap from '$lib/socials';
+	import devMap from '$lib/vars/devs.yaml';
+	import SocialsMap from '$lib/socials';
 
-export let filter: string = $page.url.pathname.substring(1);
-export let type: string;
+	export let filter: string = $page.url.pathname.substring(1);
+	export let type: string;
 
-let devs;
+	let devs;
 
-if (filter && filter !== "") {
-	devs = {};
+	if (filter && filter !== '') {
+		devs = {};
 
-	for (const [key, value] of Object.entries(devMap)) {
-		if (value.projects && value.projects.indexOf(filter) >= 0) {
-			devs[key] = value;
+		for (const [key, value] of Object.entries(devMap)) {
+			if (value.projects && value.projects.indexOf(filter) >= 0) {
+				devs[key] = value;
+			}
 		}
+	} else {
+		devs = devMap;
 	}
-} else {
-	devs = devMap;
-}
-
 </script>
 
 <ul class="developers {type}">
 	{#each Object.entries(devs) as [key, value]}
-		<li class="{key}">
+		<li class={key}>
 			<span>
 				<span class="heading">
-					<img src="{value.avatar}" width="96" height="96" loading="lazy" aria-labelledby="{key}" alt="" hidden/>
-					<h3 id="{key}">{key}</h3>
+					<img
+						src={value.avatar}
+						width="96"
+						height="96"
+						loading="lazy"
+						aria-labelledby={key}
+						alt=""
+						hidden
+					/>
+					<h3 id={key}>{key}</h3>
 					<small class="roles">
 						<!-- https://github.com/sveltejs/svelte/issues/7473#issuecomment-1606105476 is frankly clever -->
 						{#each value.roles as role, i}
-							{#if i > 0}, {/if}<i title="{role}">{role}</i>
+							{#if i > 0},
+							{/if}<i title={role}>{role}</i>
 						{/each}
 					</small>
 					<small class="links">
 						{#each Object.entries(value.socials) as [name, link], i}
-							{#if i > 0}, {/if}<a rel="me" href="{link}" title="{SocialsMap[name]}">{name}</a>
+							{#if i > 0},
+							{/if}<a rel="me" href={link} title={SocialsMap[name]}>{name}</a>
 						{/each}
 					</small>
 				</span>
-				<p class="bio">{@html value.bio ?? ""}</p>
+				<p class="bio">{@html value.bio ?? ''}</p>
 				{#if value.socials}
 					<p class="links">
-					{#each Object.entries(value.socials) as [name, link], i}
-						{#if i > 0}, {/if}<a rel="me" href="{link}" title="{SocialsMap[name]}">{name}</a>
-					{/each}
+						{#each Object.entries(value.socials) as [name, link], i}
+							{#if i > 0},
+							{/if}<a rel="me" href={link} title={SocialsMap[name]}>{name}</a>
+						{/each}
 					</p>
 				{/if}
 			</span>

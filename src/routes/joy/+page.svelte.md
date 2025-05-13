@@ -97,9 +97,9 @@ Please read carefully; this affects how you will be able to use Joy's sources.
 <img width="16" height="16" style="height:16px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a>
 </p>
 
-This does *NOT* include the music. See the [music license][MUSIC] for usage terms.
+This does _NOT_ include the music. See the [music license][MUSIC] for usage terms.
 
-This also does *NOT* include brand assets, including the rosettes in `icon.png`, and `*_rosette.png`.
+This also does _NOT_ include brand assets, including the rosettes in `icon.png`, and `*_rosette.png`.
 These are All Rights Reserved.
 
 </details>
@@ -125,23 +125,14 @@ The code for Joy is available under the [MPL-2.0][CODE].
 </details>
 
 [LICENSE]: https://git.pridecraft.gay/joy/tree/HEAD/LICENSE.md
-
 [CODE]: https://git.pridecraft.gay/joy/tree/HEAD/LICENSE-CODE
-
 [BLAHAJ-BASE]: https://git.pridecraft.gay/joy/tree/HEAD/LICENSE-BLAHAJ-BASE
-
 [BLAHAJ-PRIDE]: https://git.pridecraft.gay/joy/tree/HEAD/LICENSE-BLAHAJ-PRIDE
-
 [ASSETS]: https://git.pridecraft.gay/joy/tree/HEAD/LICENSE-ASSETS
-
 [MUSIC]: https://git.pridecraft.gay/joy/tree/HEAD/LICENSE-MUSIC
-
 [DaFuqs]: https://github.com/DaFuqs/Blahaj
-
 [hibiii]: https://github.com/hibiii/Blahaj
-
 [musicalskele]: https://github.com/musicalskele/blahaj
-
 [Pride Pack]: https://git.pridecraft.gay/pridepack
 
 </small>
