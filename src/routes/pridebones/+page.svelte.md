@@ -5,6 +5,7 @@
 import Badge from '$lib/components/BadgeRaw.svelte';
 import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
+import Developers from '$lib/components/Developers.svelte';
 import DynPicture from '$lib/components/DynPicture.svelte';
 import YouTube from '$lib/components/YouTube.svelte';
 
@@ -81,6 +82,10 @@ Pride Bones by Pridecraft Studios is licensed under [CC BY-SA 4.0](https://creat
 </small>
 
 <Socials/>
+
+## Contributors
+
+<Developers type="small"/>
 
 [Pridecraft Studios]: https://pridecraft.gay/
 [Bare Bones]: https://modrinth.com/resourcepack/bare-bones

@@ -5,6 +5,7 @@
 import Badge from '$lib/components/BadgeRaw.svelte';
 import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
+import Developers from '$lib/components/Developers.svelte';
 import DynPicture from '$lib/components/DynPicture.svelte';
 import YouTube from '$lib/components/YouTube.svelte';
 
@@ -146,5 +147,9 @@ The code for Joy is available under the [MPL-2.0][CODE].
 </small>
 
 <Socials/>
+
+## Contributors
+
+<Developers type="small"/>
 
 [Pridecraft Studios]: /

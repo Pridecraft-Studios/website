@@ -5,6 +5,7 @@
 import Badge from '$lib/components/BadgeRaw.svelte';
 import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
+import Developers from '$lib/components/Developers.svelte';
 import DynPicture from '$lib/components/DynPicture.svelte';
 import YouTube from '$lib/components/YouTube.svelte';
 
@@ -86,6 +87,10 @@ subject to limitations of [The Faithful License].
 </small>
 
 <Socials/>
+
+## Contributors
+
+<Developers type="small"/>
 
 [Pridecraft Studios]: /
 [Faithful]: https://faithfulpack.net/

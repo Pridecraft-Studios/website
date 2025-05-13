@@ -5,6 +5,7 @@
 import Badge from '$lib/components/BadgeRaw.svelte';
 import Badges from '$lib/components/Badges.svelte';
 import Picture from '$lib/components/Picture.svelte';
+import Developers from '$lib/components/Developers.svelte';
 import DynPicture from '$lib/components/DynPicture.svelte';
 import YouTube from '$lib/components/YouTube.svelte';
 
@@ -82,5 +83,10 @@ Pridepack by Pridecraft Studios is licensed under [CC BY-SA 4.0](https://creativ
 </small>
 
 <Socials/>
+
+## Contributors
+
+<Developers type="small"/>
+
 
 [Pridecraft Studios]: /

@@ -86,8 +86,12 @@ $border-radius: 8px;
 			flex-flow: column wrap;
 		}
 
-		.roles {
+		.roles, .links {
 			grid-area: roles;
+		}
+
+		.links {
+			display: none;
 		}
 	}
 
@@ -98,6 +102,24 @@ $border-radius: 8px;
 	p {
 		margin: 4px 0;
 	}
+}
+
+.developers.small {
+	img {
+		margin-right: 4px;
+		block-size: 64px;
+		max-width: 64px;
+	}
+
+	> li {
+		width: fit-content;
+	}
+
+	.heading .links {
+		display: block;
+	}
+
+	.bio, .roles, > li > span > .links { display: none; }
 }
 
 @mixin -dev($name, $light, $dark, $direction: null) {

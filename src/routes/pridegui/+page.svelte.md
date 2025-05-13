@@ -4,6 +4,7 @@
 <script lang="ts">
 import Badge from '$lib/components/BadgeRaw.svelte';
 import Badges from '$lib/components/Badges.svelte';
+import Developers from '$lib/components/Developers.svelte';
 import Picture from '$lib/components/Picture.svelte';
 
 import { Modrinth, GitHubDownloads, GitHubCommits } from '$lib/shields';
@@ -71,3 +72,7 @@ PrideGUI by Pridecraft Studios is licensed under [CC BY-SA 4.0](https://creative
 </small>
 
 <Socials/>
+
+## Contributors
+
+<Developers type="small"/>
