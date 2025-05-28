@@ -173,6 +173,15 @@ foreach ($arg in $argRem) {
 	}
 	$output = $null -ne $paths[1] ? $paths[1] : [IO.Path]::GetFileNameWithoutExtension($image);
 
+	$parent = [IO.Path]::GetDirectoryName($output)
+	if (($parent -ne "") -and !(Get-Item $parent 2> $null)) {
+		Write-Warning "Creating directory $parent"
+		if (!(New-Item -Path $parent -ItemType Directory -Force 2> $null) {
+			Write-Error "Cannot create $parent"
+			exit 1
+		}
+	}
+
 	if (!($argMap["force"]) -and !($sizes | % { !(Get-Item "$output-${_}p.png") 2> $null } | ? { $_ -eq $true })) {
 		Write-Warning "Skipping $output for $image";
 		continue;
