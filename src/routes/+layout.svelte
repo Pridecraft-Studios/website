@@ -49,7 +49,7 @@
 <footer>
 	<hr />
 	<p>
-		Copyright © 2023-2024 Pridecraft Studios &amp;
+		Copyright © 2023-{new Date().getFullYear()} Pridecraft Studios &amp;
 		<a href="https://git.pridecraft.gay/website">contributors</a>. Check the
 		<a rel="license" href="https://git.pridecraft.gay/website/blob/HEAD/LICENSE.md">license</a> for details.
 	</p>
