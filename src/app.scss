@@ -1,4 +1,4 @@
-/* Copyright (c) 2023-2024 Pridecraft Studios & contributors
+/* Copyright (c) 2023-2025 Pridecraft Studios & contributors
  * SPDX-License-Identifier: CC-BY-SA-4.0
  * https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 */
 @use 'badges';
@@ -370,4 +370,13 @@ h3 {
 h3 > svg {
 	width: 2em;
 	height: 2em;
+}
+
+.error {
+	text-align: center;
+
+	img {
+		max-height: calc(100vh - 32em);
+		max-width: 100%;
+	}
 }
