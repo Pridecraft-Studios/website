@@ -56,12 +56,19 @@ $argType = @{
 	sizes = "sizes";
 	s = "sizes";
 
+	alpha = "alpha";
+
+	background = "background";
+	bg = "background";
+
 	jpeg = "jpeg";
 	webp = "webp";
 	avif = "avif";
 	j = "jpeg";
 	w = "webp";
 	a = "avif";
+
+	terminate = "terminate";
 }
 $argShot = @{
 	force = "force";
@@ -74,6 +81,10 @@ $argMap = @{
 	# 720p and 1440p was deemed unlikely to be hit often to be worth supporting.
 	# sizes = "360,720,1080,1440,2160";
 	sizes = "360,1080,2160";
+
+	# Defaults to an off gray as spec'd by WorldWidePixel.
+	# This is effectively no-op unless alpha is set to `crush` or `merge`.
+	background = "color=c=#23232f"
 
 	# Previews should ideally have a high quality output, but realistically,
 	# it's not going to be seen in full screen in isolation.
@@ -123,6 +134,35 @@ $map = 0;
 
 $argRem = $argRem | % { $_.startsWith('file://') ? $_.substring(7) : $_ }
 
+$filterGenerator = { "scale=-1:$($args[0])" }
+
+switch ($argMap["alpha"]) {
+	"crush" {
+		$filterGenerator = {
+			"split[a][b];" +
+			"$($argMap["background"])[c];" +
+			"[c][a]scale=rw:rh[d];" + # Scales background to match input
+			"[b][d]alphamerge[e];" + # Crushes alpha channel by merging background
+			"[e]scale=-1:$($args[0])" # Scales the final result
+		}
+	}
+	"merge" {
+		$filterGenerator = {
+			"split[a][b];" +
+			"$($argMap["background"])[c];" +
+			"[c][a]scale=rw:rh[d];" + # Scales background to match input
+			"[d][b]overlay[e];" + # Merges background on top of input
+			"[e]scale=-1:$($args[0])[f];" +
+			# Now for some unknown reasons, ffmpeg when downscaling makes stuff slightly translucent.
+			# Who knows why:tm: The rest of the filter pipeline is to fix that.
+			"[f]split[g][h];" +
+			"color=c=white[i];" + # Pure white = 100% opacity; opaque
+			"[i][g]scale=rw:rh[j];" +
+			"[h][j]alphamerge" # Crushes the alpha channel.
+		}
+	}
+}
+
 foreach ($arg in $argRem) {
 	$paths = $arg.split([IO.Path]::PathSeparator);
 	$image = $paths[0];
@@ -145,7 +185,14 @@ foreach ($arg in $argRem) {
 			Write-Warning "Skipping $output-${size}p.png for $image";
 			continue;
 		}
-		$ffmpegArgs += @("-map"; [string]($outputMap); "-frames:v"; "1"; "-update"; "1"; "-vf"; "scale=-1:$size"; "-sws_flags"; "lanczos"; "$output-${size}p.png");
+		$ffmpegArgs += @(
+			"-map"; [string]($outputMap);
+			"-frames:v"; "1";
+			"-update"; "1";
+			"-vf"; (& $filterGenerator $size);
+			"-sws_flags"; "lanczos";
+			"$output-${size}p.png"
+		);
 	}
 }
 
@@ -155,6 +202,10 @@ if($ffmpegArgs) {
 	}
 	Write-Warning "ffmpeg $ffmpegArgs"
 	ffmpeg $ffmpegArgs
+}
+
+if($argMap["terminate"]) {
+	exit 1
 }
 
 if (Get-Command "oxipng" 2> $null) {
