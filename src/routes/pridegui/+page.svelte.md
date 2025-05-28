@@ -27,7 +27,9 @@ to add LGBTQ+ details and introduce dark and light themes!
 You can additionally get [PrideGUI Legacy here](https://modrinth.com/project/pridegui-legacy),
 which has versions of the pack for Alpha 1.2.2 all the way through 1.20.1.
 
-![PrideGUI banner](https://cdn.modrinth.com/data/6mcKx2Pb/images/05250c177741152dca8e964ea47a3806d23d4432.png)
+<Picture name="pridegui-dark/banner" order="avif" original="avif"
+	alt="The PrideGUI banner, featuring various inventories, and the options menu."
+/>
 
 <Donate/>
 
@@ -36,28 +38,28 @@ which has versions of the pack for Alpha 1.2.2 all the way through 1.20.1.
 ## Where can I download PrideGUI?
 
 <ul class="varied">
-<li>
+<li class="pridegui dark">
 	<h3><Rosette type="gay no-bg">Dark Mode</Rosette></h3>
 	<ul class="badges">
 	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui" ext="svg" head="Available on" name="Modrinth"/></li>
 	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui" ext="svg" head="Available on" name="GitHub"/></li>
 	</ul>
 </li>
-<li>
+<li class="pridegui dark legacy">
 	<h3><Rosette type="gay no-bg">Dark Mode - Legacy</Rosette></h3>
 	<ul class="badges">
 	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui-legacy" ext="svg" head="Available on" name="Modrinth"/></li>
 	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui/branches/all?query=legacy" ext="svg" head="Available on" name="GitHub"/></li>
 	</ul>
 </li>
-<li>
+<li class="pridegui light">
 	<h3><Rosette type="lesbian no-bg">Light Mode</Rosette></h3>
 	<ul class="badges">
 	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui-light" ext="svg" head="Available on" name="Modrinth"/></li>
 	<li><Badge id="github" rel="me" link="https://git.pridecraft.gay/pridegui/tree/light/main" ext="svg" head="Available on" name="GitHub"/></li>
 	</ul>
 </li>
-<li>
+<li class="pridegui light legacy">
 	<h3><Rosette type="lesbian no-bg">Light Mode - Legacy</Rosette></h3>
 	<ul class="badges">
 	<li><Badge id="modrinth" rel="me" link="https://modrinth.com/resourcepack/pridegui-legacy-light" ext="svg" head="Available on" name="Modrinth"/></li>

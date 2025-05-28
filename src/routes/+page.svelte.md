@@ -40,7 +40,9 @@ It is also available for Bedrock Edition on [MCPEDL](https://mcpedl.com/pridepac
 [PrideGUI](pridegui) is our GUI resource pack, adding a nice dark-themed UI with pride to all containers.
 It has a variant for every Minecraft version, starting from Minecraft Beta 1.7.3.
 
-![PrideGUI banner](https://cdn.modrinth.com/data/6mcKx2Pb/images/05250c177741152dca8e964ea47a3806d23d4432.png)
+<Picture name="pridegui-dark/banner" order="avif" original="avif"
+	alt="The PrideGUI banner, featuring various inventories, and the options menu."
+/>
 
 ### Joy
 

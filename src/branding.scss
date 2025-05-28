@@ -141,3 +141,55 @@ svg.pridegui {
 	--h: #ff9a56;
 	--g: #d52d00;
 }
+
+li.pridegui {
+	transition:
+		background-color var(--transition-time),
+		filter var(--transition-time);
+	border: 2px solid var(--crust);
+	border-radius: 1em;
+	padding-bottom: 1em;
+
+	background-color: rgb(from var(--crust) r g b / 90%);
+	background-size: cover;
+	background-blend-mode: overlay;
+
+	&:hover {
+		background-color: transparent;
+
+		h3:not(:hover) {
+			opacity: 50%;
+			background-color: transparent;
+			backdrop-filter: none;
+			filter: blur(2px);
+		}
+	}
+
+	// Sets the background for each image
+	&.dark {
+		background-image: url('/gallery/pridegui-dark/banner.avif');
+	}
+
+	&.dark.legacy {
+		background-image: url('/gallery/pridegui-legacy-dark/banner.avif');
+	}
+
+	&.light {
+		background-image: url('/gallery/pridegui-light/banner.avif');
+	}
+
+	&.light.legacy {
+		background-image: url('/gallery/pridegui-legacy-light/banner.avif');
+	}
+
+	h3 {
+		transition:
+			opacity var(--transition-time),
+			background-color var(--transition-time),
+			backdrop-filter var(--transition-time),
+			filter var(--transition-time);
+
+		background-color: rgb(from var(--crust) r g b / 75%);
+		backdrop-filter: blur(4px);
+	}
+}
