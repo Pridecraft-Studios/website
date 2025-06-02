@@ -176,7 +176,7 @@ foreach ($arg in $argRem) {
 	$parent = [IO.Path]::GetDirectoryName($output)
 	if (($parent -ne "") -and !(Get-Item $parent 2> $null)) {
 		Write-Warning "Creating directory $parent"
-		if (!(New-Item -Path $parent -ItemType Directory -Force 2> $null) {
+		if (!(New-Item -Path $parent -ItemType Directory -Force 2> $null)) {
 			Write-Error "Cannot create $parent"
 			exit 1
 		}
