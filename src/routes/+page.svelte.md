@@ -9,7 +9,7 @@ import Picture from '$lib/components/Picture.svelte';
 
 import SocialsMap from '$lib/socials';
 
-import { Socials, Donate } from '$lib/boilerplate';
+import { Who, Socials, Donate } from '$lib/boilerplate';
 </script>
 
 # Pridecraft Studios
