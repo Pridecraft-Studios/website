@@ -65,6 +65,8 @@ It comes with many LGBTQ+ Pride additions, including paintings, beds, mobs, cand
 
 </p>
 
+## Who
+
 <Who/>
 
 ## Where can I download Pridepack?

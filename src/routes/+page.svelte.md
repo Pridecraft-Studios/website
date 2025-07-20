@@ -14,11 +14,7 @@ import { Socials, Donate } from '$lib/boilerplate';
 
 # Pridecraft Studios
 
-We are a collective of developers making LGBTQ+ content for Minecraft.
-
-We make resource packs and mods to add pride-themed stuff to the game, while trying not to "over-gay".
-The main difference when compared to other packs,
-is that we know how to keep the game from looking like someone vomited rainbows all over the place.
+<Who/>
 
 <Donate/>
 
