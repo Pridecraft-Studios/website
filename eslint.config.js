@@ -16,6 +16,17 @@ export default [
 				...globals.node,
 			},
 		},
+		// Adapted from https://stackoverflow.com/a/64067915
+		rules: {
+			'no-unused-vars': 'off',
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{
+					argsIgnorePattern: '^ignored?\\d*$',
+					varsIgnorePattern: '^ignored?\\d*$',
+				},
+			],
+		},
 	},
 	{
 		files: ['**/*.svelte'],

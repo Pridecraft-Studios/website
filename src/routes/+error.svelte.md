@@ -1,3 +1,9 @@
+---
+layout: main
+title: "\0`${$page.status}'d :3c`"
+description: "\0$page.error.message"
+image: /assets/lost.webp
+---
 <!-- Copyright (c) 2023-2025 Pridecraft Studios & contributors
 	 SPDX-License-Identifier: CC-BY-SA-4.0
 	 https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 -->

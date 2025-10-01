@@ -1,3 +1,9 @@
+---
+layout: main
+title: "Prideful"
+description: "A LGBTQ+ pride themed faithful-style resource pack for Minecraft."
+image: /gallery/prideful/banner.jpeg
+---
 <!-- Copyright (c) 2023-2024 Pridecraft Studios & contributors
 	 SPDX-License-Identifier: CC-BY-SA-4.0
 	 https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 -->

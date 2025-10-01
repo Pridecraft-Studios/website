@@ -1,3 +1,9 @@
+---
+layout: main
+title: "Pride Bones"
+description: "A LGBTQ+ pride themed bare-bones-style resource pack for Minecraft."
+image: /gallery/pridebones/banner.jpeg
+---
 <!-- Copyright (c) 2023-2024 Pridecraft Studios & contributors
 	 SPDX-License-Identifier: CC-BY-SA-4.0
 	 https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 -->
