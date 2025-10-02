@@ -34,8 +34,6 @@
 	if (image.startsWith('/')) {
 		image = image.substring(1);
 	}
-
-
 </script>
 
 <svelte:head>

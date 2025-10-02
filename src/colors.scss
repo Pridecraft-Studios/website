@@ -2,19 +2,20 @@
  * SPDX-License-Identifier: CC-BY-SA-4.0
  * https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 */
 @use 'sass:color';
+@use 'sass:map';
 @use '@catppuccin/palette/scss/catppuccin';
 
 @function fetch-catppuccin-palette($entry) {
-	@if map-has-key(catppuccin.$palette, $entry) {
-		@return map-get(catppuccin.$palette, $entry);
+	@if map.has-key(catppuccin.$palette, $entry) {
+		@return map.get(catppuccin.$palette, $entry);
 	}
 	@error "Unknown `#{$entry}` in Catppuccin";
 }
 
 @function color($entry, $color) {
 	$sub-palette: fetch-catppuccin-palette($entry);
-	@if map-has-key($sub-palette, $color) {
-		@return map-get($sub-palette, $color);
+	@if map.has-key($sub-palette, $color) {
+		@return map.get($sub-palette, $color);
 	}
 	@error "Unknown `#{$color}` in Catppuccin palette `#{$entry}`";
 }
