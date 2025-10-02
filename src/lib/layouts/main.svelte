@@ -4,6 +4,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 
+	let pageTitle;
 	export let title;
 	export let description;
 	export let color = '#62A930';
@@ -15,9 +16,9 @@
 			let ignored = $page;
 			title = eval(title.substring(1));
 		}
-		title += ' | Pridecraft Studios';
+		pageTitle = title + ' | Pridecraft Studios';
 	} else {
-		title = 'Pridecraft Studios';
+		pageTitle = title = 'Pridecraft Studios';
 	}
 
 	if (description) {
@@ -33,10 +34,12 @@
 	if (image.startsWith('/')) {
 		image = image.substring(1);
 	}
+
+
 </script>
 
 <svelte:head>
-	<title>{title}</title>
+	<title>{pageTitle}</title>
 	<meta name="theme-color" content={color} />
 	<meta name="description" content={description} />
 	<meta property="og:title" content={title} />
