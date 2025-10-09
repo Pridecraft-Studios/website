@@ -25,7 +25,7 @@ including code, may be available under the [CC BY-SA 4.0](LICENSE-CC-BY-SA-4.0) 
 All eligible files will have a header containing the following:
 
 ```
-Copyright (c) 2023-2024 Pridecraft Studios & contributors
+Copyright (c) 2023-2025 Pridecraft Studios & contributors
 SPDX-License-Identifier: CC-BY-SA-4.0
 https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0
 ```

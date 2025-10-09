@@ -4,7 +4,7 @@ title: "Joy"
 description: "A Fabric mod built with the core goal of tastefully adding pride to Minecraft, while also porting Pridepack to its own set of decorations."
 image: /gallery/pridepack/banner.jpeg
 ---
-<!-- Copyright (c) 2023-2024 Pridecraft Studios & contributors
+<!-- Copyright (c) 2023-2025 Pridecraft Studios & contributors
 	 SPDX-License-Identifier: CC-BY-SA-4.0
 	 https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 -->
 <script lang="ts">

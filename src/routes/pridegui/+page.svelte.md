@@ -4,7 +4,7 @@ title: "PrideGUI"
 description: "Four LGBTQ+ pride themed GUI resource packs for Minecraft."
 image: /gallery/pridegui-light/banner.jpeg
 ---
-<!-- Copyright (c) 2023-2024 Pridecraft Studios & contributors
+<!-- Copyright (c) 2023-2025 Pridecraft Studios & contributors
 	 SPDX-License-Identifier: CC-BY-SA-4.0
 	 https://git.pridecraft.gay/website/blob/HEAD/LICENSE-CC-BY-SA-4.0 -->
 <script lang="ts">
