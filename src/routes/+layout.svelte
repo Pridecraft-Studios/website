@@ -30,8 +30,8 @@
 				<Link id="pridegui" type="pridegui no-bg">Pride GUI</Link>
 				<Link id="joy" type="pan no-bg">Joy</Link>
 				<!--Link id="mspride">MSPRIDE</Link-->
-				<Link id="pridebones" type="trans no-bg">Pride Bones</Link>
-				<Link id="prideful" type="enby no-bg">Prideful</Link>
+				<!--Link id="pridebones" type="trans no-bg">Pride Bones</Link-->
+				<!--Link id="prideful" type="enby no-bg">Prideful</Link-->
 			</ul>
 		</Popup>
 	</nav>
