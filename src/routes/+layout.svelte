@@ -47,7 +47,7 @@
 		<a rel="license" href="https://git.pridecraft.gay/website/blob/HEAD/LICENSE.md">license</a> for details.
 	</p>
 	<p>
-		Website designed by <a href="https://ampflower.gay">Ampflower</a> and
+		<a href="https://git.pridecraft.gay/website">Website</a> designed by <a href="https://ampflower.gay">Ampflower</a> and
 		<a href="https://skye.vg/">skyevg</a>, plus a couple others.
 	</p>
 	<p>
